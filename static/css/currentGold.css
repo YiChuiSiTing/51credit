@@ -100,18 +100,6 @@
     margin-top: 10px;
     font-size: 12px;
 }
-button{
-    height: 54px;
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%;
-    border-radius: 0px;
-    color: #fff;
-    background: -webkit-linear-gradient(left top, #ff7373 , #ff5151); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(bottom right, #ff7373, #ff5151); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(bottom right, #ff7373, #ff5151); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to bottom right, #ff7373 , #ff5151); /* 标准的语法 */
-}
 .buyerList{
     display: none;
     margin: 0px 20px;
