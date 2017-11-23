@@ -3,7 +3,7 @@
  */
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('main'));
-
+var myChart1 = echarts.init(document.getElementById('main1'));
 
 
 var base = +new Date(2017, 9, 3);
@@ -89,18 +89,18 @@ var option = {
                     color: '#ff5151'
                 }
             },
-            // areaStyle: {
-            //     normal: {
-            //         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-            //             offset: 0,
-            //             color: '#ff5151'
-            //         }, {
-            //             offset: 1,
-            //             color: '#fff'
-            //             // color: 'rgb(255, 70, 131)'
-            //         }])
-            //     }
-            // },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#ff5151'
+                    }, {
+                        offset: 1,
+                        color: '#fff'
+                        // color: 'rgb(255, 70, 131)'
+                    }])
+                }
+            },
             data: data
         }
     ]
@@ -109,3 +109,4 @@ var option = {
 
 // 使用刚指定的配置项和数据显示图表。
 myChart.setOption(option);
+myChart1.setOption(option);
