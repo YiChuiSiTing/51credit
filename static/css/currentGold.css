@@ -2,6 +2,7 @@
     height: 197px;
     background: #fff;
     text-align: center;
+    margin-top: 40px;
 }
 .topBox p:first-child{
     padding-top: 24px;
@@ -105,6 +106,7 @@ button{
     font-weight: bold;
     width: 100%;
     border-radius: 0px;
+    color: #fff;
     background: -webkit-linear-gradient(left top, #ff7373 , #ff5151); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(bottom right, #ff7373, #ff5151); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(bottom right, #ff7373, #ff5151); /* Firefox 3.6 - 15 */

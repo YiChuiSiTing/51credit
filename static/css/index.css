@@ -4,43 +4,6 @@
     margin: 0 auto;
 
 }
-/*titlebar*/
-#titleBar>div{
-    width:33.3%
-}
-#titleBar{
-    height: 40px;
-    border-bottom: 1px solid #e6e6e6;
-}
-#back{
-    margin-left: 16px;
-    margin-top: 12px;
-    height:16px;
-}
-#titleBarName p{
-    text-align: center;
-    font-size: 17px;
-    font-family: "PingFang SC";
-    line-height: 40px;
-    color: #333;
-    font-weight: bold;
-}
-#titleBarFunction p{
-    font-size: 15px;
-    font-family: "PingFang SC";
-    line-height: 40px;
-    color: #333;
-    text-align: right;
-    margin-right: 16px;
-}
-.brokenLineTapTitle>div{
-    width:50%;
-    height: 44px;
-    font-size: 14px;
-    line-height: 44px;
-}
-
-/*end*/
 
 /*tap*/
 #timeGoalprice{

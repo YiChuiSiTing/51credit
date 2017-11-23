@@ -171,6 +171,47 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .red{
     color: #ff5151;
 }
+/*titlebar*/
+#titleBar>div{
+    width:33.3%
+}
+#titleBar{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background: #fff;
+    height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+#back{
+    margin-left: 16px;
+    margin-top: 12px;
+    height:16px;
+}
+#titleBarName p{
+    text-align: center;
+    font-size: 17px;
+    font-family: "PingFang SC";
+    line-height: 40px;
+    color: #333;
+    font-weight: bold;
+}
+#titleBarFunction p{
+    font-size: 15px;
+    font-family: "PingFang SC";
+    line-height: 40px;
+    color: #333;
+    text-align: right;
+    margin-right: 16px;
+}
+.brokenLineTapTitle>div{
+    width:50%;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+}
+
+/*end*/
 
 /*
 Name:			style_clearfix
@@ -189,39 +230,6 @@ Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高
     zoom: 1
 }
 
-
-/*admin xiudou public*/
-/*盒子居中*/
-.centerBox{
-    position: absolute;
-    top:50%;
-    left:50%;
-}
-input{
-    display: block;
-    border:none;
-    border-bottom: 1px solid #b2b2b2;
-    height: 40px;
-    padding: 0px 10px;
-}
-button{
-    height:50px;
-    color: #fff;
-    border:none;
-    font-size: 18px;
-    cursor: pointer;
-}
-.longButton{
-    width:350px;
-    background: #000;
-    height:40px;
-}
-.sortButton{
-    background: #ff2e6b;
-    font-size: 12px;
-    text-align: center;
-    width:100px;
-}
 /*全屏显示*/
 .fullScreen{
     position:fixed;
@@ -246,42 +254,6 @@ button{
     line-height: 40px;
     padding-left: 20px;
 }
-/*头像*/
-.avatar{
-    border:1px solid #d2d2d2;
-    -webkit-border-radius:100%;
-    -moz-border-radius:100%;
-    border-radius:100%;
-}
-.title{
-    font-size: 16px;
-    height: 70px;
-}
-.pink{
-    color: #ff2e6b;
-    cursor: pointer;
-}
-.hand{
-    cursor: pointer;
-}
-.hand:hover{
-    color: #ff2e6b;
-}
-
-
-
-
-
-/*动画渲染*/
-.fade-enter-active, .fade-leave-active {
-    transition: opacity .5s
-}
-.fade-enter, .fade-leave-to {
-    opacity: 0
-}
-
-
-
 
 /*--end--*/
 
