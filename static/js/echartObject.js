@@ -12,12 +12,13 @@ var date = [];
 
 var data = [Math.random() * 300];
 
-for (var i = 1; i < 20; i++) {
+for (var i = 1; i < 20000; i++) {
     var now = new Date(base += oneDay);
     date.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
-    data.push(Math.round((Math.random() - 10.5) * 20 + data[i - 1]));
+    data.push(Math.round((Math.random() - 0.5) * 20 + data[i - 1]));
 }
 console.log(data)
+console.log(date)
 var option = {
     tooltip: {
         trigger: 'axis',
@@ -39,6 +40,9 @@ var option = {
         //     saveAsImage: {}
         // }
     },
+    legend:{
+        legend:'vertical'
+    },
     xAxis: {
         type: 'category',
         boundaryGap: false,
@@ -46,7 +50,13 @@ var option = {
     },
     yAxis: {
         type: 'value',
-        boundaryGap: [0, '100%']
+        boundaryGap: [0, '100%'],
+        axisLine:{
+            lineStyle:{
+                opacity:0
+            }
+        }
+
     },
     dataZoom: [{
         type: 'inside',
@@ -79,18 +89,18 @@ var option = {
                     color: '#ff5151'
                 }
             },
-            areaStyle: {
-                normal: {
-                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: '#ff5151'
-                    }, {
-                        offset: 1,
-                        color: '#fff'
-                        // color: 'rgb(255, 70, 131)'
-                    }])
-                }
-            },
+            // areaStyle: {
+            //     normal: {
+            //         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            //             offset: 0,
+            //             color: '#ff5151'
+            //         }, {
+            //             offset: 1,
+            //             color: '#fff'
+            //             // color: 'rgb(255, 70, 131)'
+            //         }])
+            //     }
+            // },
             data: data
         }
     ]
