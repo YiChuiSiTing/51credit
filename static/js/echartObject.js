@@ -2,8 +2,8 @@
  * Created by gengbiao on 2017/11/22.
  */
 // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('main'));
-var myChart1 = echarts.init(document.getElementById('main1'));
+var myChartCurrent = echarts.init(document.getElementById('mainCurrent'));
+var myChartHistory = echarts.init(document.getElementById('mainHistory'));
 
 
 var base = +new Date(2017, 9, 3);
@@ -108,5 +108,5 @@ var option = {
 
 
 // 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
-myChart1.setOption(option);
+myChartCurrent.setOption(option);
+myChartHistory.setOption(option);

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../static/css/index.css">
 </head>
 
-<body>
+<body style="background: #fff">
 
 <div id="titleBar" flex="dir:left">
     <div id="titleBarBack" >
@@ -21,27 +21,36 @@
     </div>
 </div>
 
-<div id="brokenLine">
+<div id="brokenLine" style="margin-top: 40px">
 
 
 
     <div flex="dir:left main:center">
-        <p class="tap tapSelected" style="margin-right: 24px">实时金价</p >
-        <p class="tap" style="margin-left: 24px">历史走势</p >
+        <p id="currentBtn" class="tap tapSelected" style="margin-right: 24px">实时金价</p >
+        <p id="historyBtn" class="tap hide" style="margin-left: 24px">历史走势</p >
     </div>
-    <div>
+    <div style="margin-top: 24px" class="current">
+
         <div id="timeGoalprice" flex="dir:right">
             <div>
                 <span>277.95</span>元/克
             </div>
         </div>
-        <div id="main" style="height:400px;"></div>
-        <div id="main1" style="height:400px;"></div>
+        <div id="mainCurrent" style="height:300px;"></div>
+
+
     </div>
-    <div class="historyTab" flex="dir:left">
-        <div class="historyTabSelect">近一月</div>
-        <div>近三月</div>
-        <div>近一年</div>
+    <div style="margin-top: 24px" class="history hide">
+        <div class="historyTab" flex="dir:left">
+            <div class="historyTabSelect">近一月</div>
+            <div>近三月</div>
+            <div>近一年</div>
+        </div>
+        <div class="historyTitle" flex="dir:left">
+            <div class=""><img src="../static/img/roundPoint.png" alt=""></div>
+            <div class="">上海黄金交易所Au9999收盘价</div>
+        </div>
+        <div id="mainHistory" style="height:400px;"></div>
     </div>
 
 
@@ -71,17 +80,46 @@
     </div>
 </div>
 <div class="grey"></div>
+
 <div class="certificateGoal">
     <p class="currentGoalTitle">定期金</p>
-    <p class="certificateGoalProject">B2B月月盈增计划</p>
-    <div class="currentGoalItem" flex="dir:left">
-        <div class="goalItemLeft">
-            <p class="goalItemP"><span>1.3</span>%</p>
-            <p class="goalItemTitle">预计年化生金率</p>
+    <div class="certificateItem">
+        <p class="certificateGoalProject">B2B月月盈增计划</p>
+        <div class="currentGoalItem" flex="dir:left">
+            <div class="goalItemLeft">
+                <p class="goalItemP"><span>1.3</span>%</p>
+                <p class="goalItemTitle">预计年化生金率</p>
+            </div>
+            <div class="goalItemRight">
+                <p class="goalItemP" style="margin-top: 6px">灵活</p>
+                <p class="goalItemTitle" >投资期限</p>
+            </div>
         </div>
-        <div class="goalItemRight">
-            <p class="goalItemP" style="margin-top: 6px">灵活</p>
-            <p class="goalItemTitle" >投资期限</p>
+    </div>
+    <div class="certificateItem">
+        <p class="certificateGoalProject">B2B月月盈增计划</p>
+        <div class="currentGoalItem" flex="dir:left">
+            <div class="goalItemLeft">
+                <p class="goalItemP"><span>1.3</span>%</p>
+                <p class="goalItemTitle">预计年化生金率</p>
+            </div>
+            <div class="goalItemRight">
+                <p class="goalItemP" style="margin-top: 6px">灵活</p>
+                <p class="goalItemTitle" >投资期限</p>
+            </div>
+        </div>
+    </div>
+    <div class="certificateItem">
+        <p class="certificateGoalProject">B2B月月盈增计划</p>
+        <div class="currentGoalItem" flex="dir:left">
+            <div class="goalItemLeft">
+                <p class="goalItemP"><span>1.3</span>%</p>
+                <p class="goalItemTitle">预计年化生金率</p>
+            </div>
+            <div class="goalItemRight">
+                <p class="goalItemP" style="margin-top: 6px">灵活</p>
+                <p class="goalItemTitle" >投资期限</p>
+            </div>
         </div>
     </div>
 </div>
