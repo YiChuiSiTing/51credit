@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>活期黄金</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/currentGold.css">
+</head>
+
+<body>
+<div class="topBox">
+    <p>参考买入金价(元/克)</p>
+    <p>277.95</p>
+    <div>
+        <span>灵活存取</span>
+        <span>零手续费</span>
+    </div>
+    <ul flex="dir:left main:center" style="margin-top: 14px;">
+        <li>期限</li>
+        <li>年化生金率</li>
+        <li>起购</li>
+    </ul>
+    <ul flex="dir:left main:center" class="bigRed">
+        <li>随时买卖</li>
+        <li>1.3%</li>
+        <li>0.001克</li>
+    </ul>
+</div>
+<div class="middleBox">
+    <ul flex="dir:left box:mean">
+        <li>
+            <p class="circle"></p>
+        </li>
+        <li>
+            <p class="circle"></p>
+        </li>
+        <li>
+            <p class="circle"></p>
+        </li>
+    </ul>
+    <div class="borderLeft"></div>
+    <div class="borderRight"></div>
+    <ul flex="dir:left box:mean">
+        <li>
+            <p>购买</p>
+        </li>
+        <li>
+            <p>起息</p>
+        </li>
+        <li>
+            <p>到账</p>
+        </li>
+    </ul>
+    <ul flex="dir:left box:mean" style="color: #999;margin-top: 10px;">
+        <li>
+            <p>2017-10-03</p>
+        </li>
+        <li>
+            <p>2017-10-03</p>
+        </li>
+        <li>
+            <p>2017-10-03</p>
+        </li>
+    </ul>
+</div>
+<div class="bottomBox">
+    <div flex="dir:left main:center">
+        <p class="tap tapSelected productMes" style="margin-right: 24px">产品详解</p>
+        <p class="tap buyerNum" style="margin-left: 24px">购买人数</p>
+    </div>
+    <div class="rules">
+        <ul style="padding-right: 20px">
+            <li flex="dir:left">
+                <img src="../static/img/goalKind.png" alt="">
+                <div>
+                    <p class="rulesTitle">黄金品种</p>
+                    <p class="rulesText">纯度为<span class="DIN">99.99%</span>的现货黄金</p>
+                </div>
+            </li>
+            <li flex="dir:left">
+                <img src="../static/img/profitForm.png" alt="">
+                <div>
+                    <p class="rulesTitle">收益构成</p>
+                    <p class="rulesText"><span class="DIN">1.99%</span>年化黄金收益 + 金价波动收益</p>
+                </div>
+            </li>
+            <li flex="dir:left">
+                <img src="../static/img/procedureFee.png" alt="">
+                <div>
+                    <p class="rulesTitle">手续费</p>
+                    <p class="rulesText">0元/克</p>
+                </div>
+            </li>
+            <li flex="dir:left">
+                <img src="../static/img/interestRule.png" alt="">
+                <div>
+                    <p class="rulesTitle">计息规则</p>
+                    <p class="rulesText">克重 * 年化收益率 * 期限 / 365, 利息在到账日自动转为您的活期黄金克数</p>
+                </div>
+            </li>
+            <li flex="dir:left">
+                <img src="../static/img/contractAgreement.png" alt="">
+                <div>
+                    <p class="rulesTitle">合同协议</p>
+                    <p class="rulesText red">黄金消费综合服务协议 >></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buyerList">
+        <ul>
+            <li  flex="dir:left main:justify">
+                <p>139******98</p>
+                <p>2017-11-11 17:56:23</p>
+                <p>1克</p>
+            </li>
+            <li  flex="dir:left main:justify">
+                <p>139******98</p>
+                <p>2017-11-11 17:56:23</p>
+                <p>1克</p>
+            </li>
+            <li  flex="dir:left main:justify">
+                <p>139******98</p>
+                <p>2017-11-11 17:56:23</p>
+                <p>1克</p>
+            </li>
+            <li  flex="dir:left main:justify">
+                <p>139******98</p>
+                <p>2017-11-11 17:56:23</p>
+                <p>1克</p>
+            </li>
+            <li  flex="dir:left main:justify">
+                <p>139******98</p>
+                <p>2017-11-11 17:56:23</p>
+                <p>1克</p>
+            </li>
+            <li  flex="dir:left main:justify">
+                <p>139******98</p>
+                <p>2017-11-11 17:56:23</p>
+                <p>1克</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<button class="next">买入</button>
+
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script>
+    //changeTap
+    $(".productMes").click(function () {
+        $(this).addClass('tapSelected');
+        $(".buyerNum").removeClass('tapSelected');
+        $(".rules").show();
+        $(".buyerList").hide();
+    })
+    $(".buyerNum").click(function () {
+        $(this).addClass('tapSelected');
+        $(".productMes").removeClass('tapSelected');
+        $(".rules").hide();
+        $(".buyerList").show();
+    })
+    //toNextPage
+    $(".next").click(function () {
+        window.location.href = './buyCurrentGold.html'
+    })
+</script>
+</body>
+
+</html>

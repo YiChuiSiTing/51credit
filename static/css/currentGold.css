@@ -1,0 +1,124 @@
+.topBox{
+    height: 197px;
+    background: #fff;
+    text-align: center;
+}
+.topBox p:first-child{
+    padding-top: 24px;
+}
+.topBox p:nth-child(2){
+    font-size: 36px;
+    color: #ff5151;
+    font-family: 'DIN Alternate';
+    margin-top: 14px;
+}
+.topBox div span{
+    margin-top: 8px;
+    border:1px solid rgba(255,71,71,0.4);
+    color: #ff5151;
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 2px;
+    display: inline-block;
+}
+.topBox ul li{
+    width: 33.33%;
+}
+.bigRed li{
+    color: #ff5151;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.middleBox{
+    margin-top: 12px;
+    background: #fff;
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    position: relative;
+}
+.middleBox ul:first-child li{
+    margin: 14px 0px;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border:2px solid #ff5151;
+    display: inline-block;
+}
+.borderLeft,.borderRight{
+    width: 29%;
+    border-top:1px solid rgba(255,71,71,0.2);
+    position: absolute;
+    top:21px;
+}
+.borderLeft{
+    left: 19%;
+}
+.borderRight{
+    right:19%;
+}
+.bottomBox{
+    margin-top: 12px;
+    background: #fff;
+    padding-bottom: 2px;
+}
+.bottomBox>div>p{
+    font-size: 14px;
+}
+.tap{
+    line-height: 44px;
+    height: 44px;
+}
+.tapSelected{
+    color: #ff5151;
+    border-bottom: 2px solid #ff5151;
+}
+.rules{
+    margin-top: 30px;
+}
+.rules li{
+    margin-bottom: 30px;
+}
+.rules img{
+    width: 24px;
+    height: 24px;
+    margin: 0px 16px;
+    margin-top: -2px;
+}
+.rulesTitle{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+.rulesText{
+    margin-top: 10px;
+    font-size: 12px;
+}
+button{
+    height: 54px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0px;
+    background: -webkit-linear-gradient(left top, #ff7373 , #ff5151); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right, #ff7373, #ff5151); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff7373, #ff5151); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, #ff7373 , #ff5151); /* 标准的语法 */
+}
+.buyerList{
+    display: none;
+    margin: 0px 20px;
+    font-size: 13px;
+    color: #666;
+    margin-top: 22px;
+    min-height: 212px;
+}
+.buyerList li{
+    margin-bottom: 12px;
+}
+
