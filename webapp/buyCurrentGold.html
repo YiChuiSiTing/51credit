@@ -20,25 +20,34 @@
     </div>
 </div>
 <div class="realTimeGoldPrice">
-    <p class="rgpTitle">实时金价 <span class="DIN red">271.43</span>元/克</p>
-    <p class="rgpText">金价实时波动,最终成交价格≤实时金价 + <span class="redBorder">0.5元/克</span></p>
+    <p class="rgpTitle">实时金价 <span class="DIN red rgpPrice">271.43</span>元/克</p>
+    <p class="rgpText">金价实时波动,最终成交价格≤实时金价 + <span class="redBorder"><span class="addPrice">0.50</span>元/克</span></p>
 </div>
 <div class="purchaseInfo">
-    <div flex="dir:left main:justify">
-        <input type="text" placeholder="请输入购买金额">
-        <p class="bigRedText red">切换成按克重</p>
+    <div flex="dir:left main:left">
+        <span class="RMB">¥</span><input type="number" placeholder="请输入购买金额" class="numInput">
+        <div class="preview">
+            <div class="arrow_box">
+                <h1 class="logo">预估克重:<span class="grams"></span>克</h1>
+            </div>
+        </div>
+        <p class="bigRedText red switchGrams" style="position: absolute;right: 16px;">切换成按克重</p>
     </div>
     <div class="purchaseText" flex="dir:left main:justify">
         <div>
-            <p>现金余额</p>
-            <p>可用余额20.00元</p>
+            <p style="font-size: 16px;color: #333;">现金余额</p>
+            <div class="purchaseMes" flex="dir:Left">
+                <p>可用余额<span class="balanceMoney">20.00</span>元</p>
+                <img src="../static/img/notice.png" alt="" class="balanceMes">
+                <p id="balance" class="balanceMes">余额不足,请先充值</p>
+            </div>
         </div>
         <p class="bigRedText red" style="margin-top: 5px">去充值</p>
     </div>
 </div>
 <div class="buyerTips">
     <div flex="dir:left" class="agreement">
-        <img src="../static/img/noRead.png" alt="">
+        <img src="../static/img/noRead.png" alt="" class="checkImg">
         <p>已阅读并同意《黄金消费综合服务协议》</p>
     </div>
     <div class="tipsText">
@@ -50,8 +59,14 @@
         <p>4. 请您先充值再购买</p>
     </div>
 </div>
-<button class="downBotton">立即买入</button>
+<button class="downBotton keepDown">立即买入</button>
+<!--dialog-->
+<!--<div class="fullScreen">-->
+    <!--<div></div>-->
+<!--</div>-->
+<!--end-->
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/js/util.js"></script>
+<script src="../static/js/buyCurrentGold.js"></script>
 </body>
 </html>

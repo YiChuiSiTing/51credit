@@ -27,9 +27,21 @@
     height: 64px;
     border-top: 1px solid #f7f7f7;
 }
-.purchaseText p:first-child{
-    font-size: 16px;
-    color: #333;
+.purchaseMes p{
+    font-size: 10px;
+    color: #999;
+}
+.purchaseMes img{
+    margin-left:12px;
+    margin-right: 4px;
+    height: 14px;
+    margin-top: 10px;
+}
+#balance{
+    color: #ff5151;
+}
+.balanceMes{
+    display: none;
 }
 .purchaseText div p{
     font-size: 12px;
@@ -61,3 +73,50 @@
     line-height: 1.8;
     letter-spacing: 1px;
 }
+.keepDown{
+    position: absolute;
+    bottom: 0px;
+}
+.RMB{
+    font-size: 16px;
+    line-height: 64px;
+    display: none;
+    color: #333;
+}
+/*arrow*/
+.arrow_box {
+    position: relative;
+    background: #ff5151;
+    border: 1px solid #ff5151;
+    color: #fff;
+    font-size: 10px;
+    top:46px;
+    right: 140px;
+    padding: 0px 6px;
+    border-radius: 2px;
+    display: none;
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    /*border-bottom-color: #88b7d5;*/
+    border-width: 10px;
+    margin-left: -30px;
+}
+.arrow_box:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #ff5151;
+    border-width: 5px;
+    margin-left: -36px;
+}
+/*end*/
