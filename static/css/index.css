@@ -67,6 +67,9 @@
     background: #f3f3f3;
 }
 /*currentGoal*/
+#brokenLine{
+    position: relative;
+}
 .currentGoal{
     margin: 0px 0px 20px 16px;
 }
@@ -162,3 +165,14 @@
 }
 
 /*end*/
+
+
+.hide{
+    display: none;
+}
+.historyTab>div{
+    float: left;
+}
+.historyTitle>div{
+    float: left;
+}

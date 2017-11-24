@@ -171,6 +171,24 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .red{
     color: #ff5151;
 }
+.redBorder{
+    border:1px solid rgba(255,71,71,0.4);
+    border-radius: 4px;
+    color: #ff5151;
+    padding:0px 6px;
+}
+.downBotton{
+    height: 54px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0px;
+    color: #fff;
+    background: -webkit-linear-gradient(left top, #ff7373 , #ff5151); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right, #ff7373, #ff5151); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff7373, #ff5151); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, #ff7373 , #ff5151); /* 标准的语法 */
+}
 /*titlebar*/
 #titleBar>div{
     width:33.3%
@@ -211,12 +229,8 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     font-size: 14px;
     line-height: 44px;
 }
-.show{
-    display: block;
-}
-.hide{
-    display: none;
-}
+
+
 
 /*end*/
 

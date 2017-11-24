@@ -2,4 +2,62 @@
     background: #fff;
     height: 64px;
     margin-top: 52px;
+    padding:0px 16px;
+}
+.rgpText{
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+}
+.rgpTitle{
+    font-size: 16px;
+    color: #333;
+    padding-top: 8px;
+}
+.purchaseInfo{
+    margin-top: 12px;
+    padding:0px 16px;
+    background: #fff;
+}
+.purchaseInfo input{
+    height: 64px;
+    font-size: 16px;
+}
+.purchaseText{
+    height: 64px;
+    border-top: 1px solid #f7f7f7;
+}
+.purchaseText p:first-child{
+    font-size: 16px;
+    color: #333;
+}
+.purchaseText div p{
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+}
+.bigRedText{
+    font-size: 14px;
+    width: 50px;
+    padding-top: 15px;
+}
+.buyerTips{
+    padding:0px 16px;
+}
+.agreement{
+    font-size: 10px;
+    color: #999;
+    margin-top: 12px;
+}
+.agreement img{
+    height: 16px;
+}
+.agreement p{
+    margin-left: 6px;
+}
+.tipsText{
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 1px;
 }

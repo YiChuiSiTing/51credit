@@ -27,30 +27,31 @@
 
     <div flex="dir:left main:center">
         <p id="currentBtn" class="tap tapSelected" style="margin-right: 24px">实时金价</p >
-        <p id="historyBtn" class="tap hide" style="margin-left: 24px">历史走势</p >
+        <p id="historyBtn" class="tap " style="margin-left: 24px">历史走势</p >
     </div>
-    <div style="margin-top: 24px" class="current">
+    <div style="margin-top: 24px" class="current ">
 
         <div id="timeGoalprice" flex="dir:right">
             <div>
                 <span>277.95</span>元/克
             </div>
         </div>
-        <div id="mainCurrent" style="height:300px;"></div>
-
-
-    </div>
-    <div style="margin-top: 24px" class="history hide">
-        <div class="historyTab" flex="dir:left">
+        <div class="historyTab hide cl">
             <div class="historyTabSelect">近一月</div>
             <div>近三月</div>
             <div>近一年</div>
         </div>
-        <div class="historyTitle" flex="dir:left">
+        <div class="historyTitle hide cl" >
             <div class=""><img src="../static/img/roundPoint.png" alt=""></div>
             <div class="">上海黄金交易所Au9999收盘价</div>
         </div>
-        <div id="mainHistory" style="height:400px;"></div>
+        <div id="mainCurrent" style="height:300px;"></div>
+
+
+    </div>
+    <div style="margin-top: 24px" class="history ">
+
+
     </div>
 
 
@@ -126,8 +127,9 @@
 
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/js/echarts.common.min.js"></script>
-<script src="../static/js/index.js"></script>
 <script src="../static/js/echartObject.js"></script>
+<script src="../static/js/index.js"></script>
+
 </body>
 
 </html>

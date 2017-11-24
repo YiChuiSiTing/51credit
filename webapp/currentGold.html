@@ -154,26 +154,29 @@
         </ul>
     </div>
 </div>
-<button class="next">买入</button>
+<button class="downBotton">买入</button>
 
 <script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
 <script>
-    //changeTap
-    $(".productMes").click(function () {
-        $(this).addClass('tapSelected');
-        $(".buyerNum").removeClass('tapSelected');
-        $(".rules").show();
-        $(".buyerList").hide();
-    })
-    $(".buyerNum").click(function () {
-        $(this).addClass('tapSelected');
-        $(".productMes").removeClass('tapSelected');
-        $(".rules").hide();
-        $(".buyerList").show();
-    })
-    //toNextPage
-    $(".next").click(function () {
-        window.location.href = './buyCurrentGold.html'
+    $(function () {
+        //changeTap
+        $(".productMes").click(function () {
+            $(this).addClass('tapSelected');
+            $(".buyerNum").removeClass('tapSelected');
+            $(".rules").show();
+            $(".buyerList").hide();
+        })
+        $(".buyerNum").click(function () {
+            $(this).addClass('tapSelected');
+            $(".productMes").removeClass('tapSelected');
+            $(".rules").hide();
+            $(".buyerList").show();
+        })
+        //toNextPage
+        $(".next").click(function () {
+            window.location.href = './buyCurrentGold.html'
+        })
     })
 </script>
 </body>
