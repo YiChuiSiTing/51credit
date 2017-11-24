@@ -71,12 +71,14 @@
     position: relative;
 }
 .currentGoal{
-    margin: 0px 0px 20px 16px;
+    margin: 0px 0px 20px 0px;
 }
-
+.currentGoalItem,.certificateItem{
+    margin-left: 16px;
+}
 .certificateGoal{
 
-    margin: 0px 0px 20px 16px;
+    margin: 0px 0px 20px 0px;
     padding-bottom: 20px;
 }
 .currentGoalTitle{
@@ -162,6 +164,15 @@
 
     margin-bottom: 18px;
     margin-top: 40px;
+}
+.goalItemRight p{
+    font-size: 12px;
+    color: #666666;
+}
+.itemDay{
+    font-size: 16px;
+    color: #333333;
+    font-family: "DIN Alternate";
 }
 
 /*end*/

@@ -13,17 +13,17 @@ var dateCurrent = [];
 var dataCurrent = [Math.random() * 300];
 var dateHistory = [];
 
-var dataHistory = [274.1,274.3,274.9,274.6,274.22,274.22,274.88];
+var dataHistory = [];
 for (var i = 1; i < 200; i++) {
     var now = new Date(base += oneDay);
     dateCurrent.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
     dataCurrent.push((Math.random()) * 20);
 }
 console.log(dataCurrent)
-// for (var i = 1; i < 20000; i++) {
-//
-//     dataHistory.push(Math.round((Math.random() - 0.5) * 20 + dataCurrent[i - 1]));
-// }
+for (var i = 1; i < 20000; i++) {
+
+    dataHistory.push(Math.round((Math.random() - 0.5) * 20 + dataCurrent[i - 1]));
+}
 for (var i = 1; i < 1000; i++) {
     var now = new Date(base += oneDay);
     dateHistory.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
@@ -81,7 +81,7 @@ var optionCurrent = {
                     }
                 }
             },
-            data: ["2016-1", "2016-2", "2016-3", "2016-4", "2016-5", "2016-6", "2016-7", "2016-8", "2016-9", "2016-10", "2016-11", "2016-12"]
+            data: ["01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00"]
         }
     ],
     yAxis: {
@@ -137,8 +137,8 @@ var optionCurrent = {
                     }])
                 }
             },
-            // data: dataCurrent
-            data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+            data: dataCurrent
+            // data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         }
     ],
 
