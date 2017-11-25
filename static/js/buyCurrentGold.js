@@ -14,6 +14,8 @@ var buyCurrentGold = {
         this.changeSelected();
         this.onfucous();
         this.switchGrams();
+        this.changePrice();
+        this.buy();
     },
     changeSelected:function () {
         //changeSelected
@@ -32,7 +34,9 @@ var buyCurrentGold = {
             if($(this).val() == ''){
                 $(".RMB").hide();
                 $(".arrow_box").hide();
+                $(".keepDown").attr("disabled","disabled").css("opacity",'0.45')
             }else{
+                $(".keepDown").removeAttr("disabled").css("opacity",'1')
                 $(this).val(util.amount($(this).val()))
                 $(".RMB").show();
                 $(this).css("color","#333");
@@ -71,18 +75,58 @@ var buyCurrentGold = {
     takeMoney:function (val) {
         var rgpPrice = parseFloat($(".rgpPrice").text());
         var addPrice = parseFloat($(".addPrice").text());
-        var money = val * (rgpPrice + rgpPrice)
-        $(".logo").html('预估金额<span class="titleMoney">' + money.toFixed(2) + '</span>元');
+        var money = val * rgpPrice + val * rgpPrice;
+        $(".logo").html('预估金额<span class="titleMoney">' + money+ '</span>元');
         this.balanceTips(val)
     },
     balanceTips:function (val) {
         var balanceMoney = parseFloat($(".balanceMoney").text());
         var titleMoney = parseFloat($(".titleMoney").text());
-        if(val > balanceMoney || titleMoney > balanceMoney){
+        if(val > balanceMoney || titleMoney > balanceMoney || val == 0){
             $(".balanceMes").show()
+            $(".keepDown").attr("disabled","disabled").css("opacity",'0.45')
         }else{
             $(".balanceMes").hide()
         }
+    },
+    changePrice:function () {
+        $(".changePrice").click(function () {
+            $(".payMesBox").show();
+            $(".showChangeBox").show();
+            $("#payBox").hide();
+        });
+        this.cancle();
+        this.enter();
+    },
+    buy:function () {
+        $(".keepDown").click(function () {
+            $(".payMesBox").show();
+            $(".showChangeBox").hide();
+            $("#payBox").show();
+        });
+    },
+    cancle:function () {
+        $("#cancle,.close").click(function () {
+            $(".payMesBox").hide();
+        })
+    },
+    enter:function () {
+        $("#enter").click(function () {
+            $(".showChangeBox").hide();
+            $("#payBox").show();
+        })
+        this.surePay();
+    },
+    surePay:function () {
+        $(".surePay").click(function () {
+            $(".alertTips").show();
+        })
+        this.know();
+    },
+    know:function () {
+        $(".know").click(function () {
+            $(".fullScreen").hide();
+        })
     }
 
 

@@ -111,4 +111,31 @@
 .buyerList li{
     margin-bottom: 12px;
 }
+.progessBar{
+    width: 292px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #f3f3f3;
+}
+.sold{
+    background: #ff5151;
+    width: 30%;
+    height: 2px;
+}
+.left,.center,.right{
+    width: 20%;
+    border-top:1px solid rgba(255,71,71,0.2);
+    position: absolute;
+    top:21px;
+}
+.left{
+    left: 15%;
+}
+.center{
+    left:40%;
+}
+.right{
+    left: 65%;
+}
 

@@ -5,7 +5,7 @@ html, body, h1, h2, h3, h4, h5, h6, hr, p, iframe, dl, dt, dd, ul, ol, li, pre, 
 }
 
 body {
-    background: #f7f7f7;
+    background: #f3f3f3;
     color: #323232;
     margin: 0 auto;
     font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
@@ -184,10 +184,40 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     width: 100%;
     border-radius: 0px;
     color: #fff;
+    border:none;
     background: -webkit-linear-gradient(left top, #ff7373 , #ff5151); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(bottom right, #ff7373, #ff5151); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(bottom right, #ff7373, #ff5151); /* Firefox 3.6 - 15 */
     background: linear-gradient(to bottom right, #ff7373 , #ff5151); /* 标准的语法 */
+}
+.alertMes{
+    background: #fff;
+    width: 74%;
+    margin-left: 13%;
+    border-radius: 2px;
+    margin-top: 38%;
+    color: #666;
+    padding:0px 24px 72px 24px;
+    position: relative;
+    font-size: 14px;
+    color: #333;
+}
+.know{
+    font-size: 16px;
+    color: #1a97ff;
+    position: absolute;
+    border:none;
+    border-top:1px solid #f3f3f3;
+    width: 100%;
+    bottom:0px;
+    left:0px;
+    height: 48px;
+    border-radius: 0px;
+    background: #fff;
+    font-weight: bold;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-family: "Franklin Gothic Medium";
 }
 /*titlebar*/
 #titleBar>div{
@@ -260,6 +290,7 @@ Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高
     bottom: 0px;
     background: rgba(0,0,0,0.3);
     z-index: 999;
+    /*display: none;*/
 }
 
 .oneLine{
