@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的黄金</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/myGold.css">
+</head>
+
+<body>
+<div id="titleBar" flex="dir:left">
+    <div id="titleBarBack" >
+        <img src="../static/img/back.png" alt="" id="back" >
+    </div>
+    <div id="titleBarName">
+        <p>我的黄金</p>
+    </div>
+    <div id="titleBarFunction">
+        <p>交易明细</p>
+    </div>
+</div>
+<div class="topBox">
+    <div flex="dir:left main:center">
+        <p>黄金总资产(克)</p>
+        <img src="../static/img/show.png" alt="" class="showImg">
+    </div>
+    <p class="assets">123123.2325</p>
+    <div>
+      <p style="margin-top: 8px;padding: 0px;">黄金市值(元):2466630.67</p>
+    </div>
+    <ul flex="dir:left main:center" style="margin-top: 24px;padding: 0px 16px;">
+        <li style="text-align: left">实时金价(元 / 克)</li>
+        <li  flex="dir:left" style="text-align: center;padding-left: 6px">成本均价(元 / 克) <img src="../static/img/question.png" alt="" class="question firstQ"></li>
+        <li  flex="dir:left" style="padding-left: 36px">总收益(元) <img src="../static/img/question.png" alt="" class="question lastQ"></li>
+    </ul>
+    <ul flex="dir:left main:center" class="bigRed">
+        <li style="padding-left: 52px">26.78</li>
+        <li style="padding-right: 15px">282.98</li>
+        <li style="padding-left: 38px">325.12</li>
+    </ul>
+</div>
+<div class="middleBox" flex="dir:left main:justify">
+    <div>
+        <p>活期黄金(克)</p>
+        <p class="DIN">36.9988</p>
+    </div>
+    <div>
+        <p>定期黄金(克)</p>
+        <p class="DIN">12.9993</p>
+    </div>
+</div>
+<div class="bottomBox">
+    <div flex="dir:left main:justify" style="border-bottom: 1px solid #f3f3f3;">
+        <p>实名认证</p>
+        <img src="../static/img/arrowRight.png" alt="">
+    </div>
+    <div flex="dir:left main:justify">
+        <p>我的银行卡</p>
+        <img src="../static/img/arrowRight.png" alt="">
+    </div>
+</div>
+<div class="buttons" flex="dir:left">
+    <button class="downBotton sellOut">卖出</button>
+    <button class="downBotton buyIn">买入</button>
+</div>
+<div class="fullScreen alertTips firstTip" style="display: none">
+    <div class="alertMes">
+        <p style="color:#333;font-size: 16px;line-height: 3;text-align: center;font-family: 'Franklin Gothic Medium'">成本均价</p>
+        <p>成本均价代表你每买入1克黄金所付出的成本。</p>
+        <p>1、买金的影响÷</p>
+        <p>成本均价=(原持仓克重×原成本均价+买入克重×买入价格) ÷ (原持仓克重 + 买入克重)</p>
+        <p>2、卖金的影响</p>
+        <p>卖出/提金操作只减去当前持有克重,不影响价格。</p>
+        <p>3、赠金/利息的影响</p>
+        <p>赠金/利息按0元买入计算新的成本均价。</p>
+        <button class="know closeTips">知道了</button>
+    </div>
+</div>
+<div class="fullScreen alertTips lastTip" style="display: none">
+    <div class="alertMes">
+        <p style="color:#333;font-size: 16px;line-height: 3;text-align: center;font-family: 'Franklin Gothic Medium'">总收益</p>
+        <p>成本均价代表你每买入1克黄金所付出的成本。</p>
+        <p>1、买金的影响÷</p>
+        <p>成本均价=(原持仓克重×原成本均价+买入克重×买入价格) ÷ (原持仓克重 + 买入克重)</p>
+        <p>2、卖金的影响</p>
+        <p>卖出/提金操作只减去当前持有克重,不影响价格。</p>
+        <p>3、赠金/利息的影响</p>
+        <p>赠金/利息按0元买入计算新的成本均价。</p>
+        <button class="know closeTips">知道了</button>
+    </div>
+</div>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
+<script>
+    $(function () {
+        //showImg{
+        $(".showImg").click(function () {
+            if($(this).attr("src") == "../static/img/show.png"){
+                $(this).attr("src","../static/img/hide.png");
+                $(".assets").text("****")
+            }else{
+                $(this).attr("src","../static/img/show.png");
+                $(".assets").text("12321323.4")
+            }
+        })
+        //firstQ
+        $(".firstQ").click(function () {
+            $(".firstTip").show();
+        })
+        //lastQ
+        $(".lastQ").click(function () {
+            $(".lastTip").show();
+        })
+        //closeTips
+        $(".closeTips").click(function () {
+            $(".firstTip,.lastTip").hide();
+        })
+    })
+</script>
+</body>
+
+</html>

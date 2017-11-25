@@ -21,7 +21,7 @@
 </div>
 <div class="realTimeGoldPrice">
     <p class="rgpTitle">实时金价 <span class="DIN red rgpPrice">271.43</span>元/克</p>
-    <p class="rgpText">金价实时波动,最终成交价格≤实时金价 + <span class="redBorder"><span class="addPrice">0.50</span>元/克</span></p>
+    <p class="rgpText">金价实时波动,最终成交价格≤实时金价 + <span class="redBorder changePrice"><span class="addPrice">0.50</span>元/克</span></p>
 </div>
 <div class="purchaseInfo">
     <div flex="dir:left main:left">
@@ -47,7 +47,7 @@
 </div>
 <div class="buyerTips">
     <div flex="dir:left" class="agreement">
-        <img src="../static/img/noRead.png" alt="" class="checkImg">
+        <img src="../static/img/read.png" alt="" class="checkImg">
         <p>已阅读并同意《黄金消费综合服务协议》</p>
     </div>
     <div class="tipsText">
@@ -59,11 +59,56 @@
         <p>4. 请您先充值再购买</p>
     </div>
 </div>
-<button class="downBotton keepDown">立即买入</button>
+<button class="downBotton keepDown" disabled="disabled">立即买入</button>
 <!--dialog-->
-<!--<div class="fullScreen">-->
-    <!--<div></div>-->
-<!--</div>-->
+<div class="fullScreen payMesBox"
+     style="display: none"
+>
+    <div class="showChangeBox">
+        <p style="font-size: 16px;font-weight: blod;margin-top: 24px">可接受金价最大提示值</p>
+        <p style="font-size: 14px;margin-top: 10px;">范围越大, 购买成功率越高</p>
+        <div flex="dir:left main:justify">
+            <p>-</p>
+            <p>0.5</p>
+            <p>+</p>
+        </div>
+        <p flex="dir:left main:justify" style="border-top: 1px solid #f3f3f3;">
+            <button id="cancle">取消</button>
+            <button id="enter">确定</button>
+        </p>
+    </div>
+    <div id="payBox"
+         style="display: none">
+        <div class="payBoxTitle">
+            <img src="../static/img/close.png" alt="" class="close">
+            <p>支付</p>
+        </div>
+        <div id="payMes">
+            <div class="buyMes">
+                <div flex="dir:left main:justify" style="padding-top: 14px">
+                    <p style="color: #666;">实时金价</p>
+                    <p>282.99元/克</p>
+                </div>
+                <div flex="dir:left main:justify" style="margin-top: 20px">
+                    <p style="color: #666">买入克重</p>
+                    <p>3.9999克</p>
+                </div>
+            </div>
+            <div class="needPay" flex="dir:left main:justify">
+                <p>需付款</p>
+                <p class="red">1000.00元</p>
+            </div>
+            <button class="downBotton surePay">确认支付</button>
+        </div>
+    </div>
+</div>
+<div class="fullScreen alertTips" style="display: none;">
+    <div class="alertMes">
+        <p style="color:#333;font-size: 16px;line-height: 3;text-align: center;font-weight: bold">提示</p>
+        <p style="font-size: 14px">亲,金价超过可接受的最大金价,再试一次吧~</p>
+        <button class="know">我知道了</button>
+    </div>
+</div>
 <!--end-->
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/js/util.js"></script>

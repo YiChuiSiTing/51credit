@@ -1,0 +1,98 @@
+.topBox{
+    height: 197px;
+    background: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+.topBox p:first-child{
+    padding-top: 16px;
+}
+.showImg{
+    height: 14px;
+    margin-top: 18px;
+    margin-left: 4px;
+}
+.topBox p:nth-child(2){
+    font-size: 36px;
+    color: #ff5151;
+    font-family: 'DIN Alternate';
+    margin-top: 14px;
+}
+.topBox div span{
+    margin-top: 8px;
+    border:1px solid rgba(255,71,71,0.4);
+    color: #ff5151;
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 2px;
+    display: inline-block;
+}
+.topBox ul li{
+    width: 33.33%;
+}
+.bigRed li{
+    font-size: 13px;
+    margin-top: 12px;
+    color: #333;
+}
+.question{
+    height: 12px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.middleBox{
+    margin-top: 12px;
+    background: #fff;
+    font-size: 12px;
+    color: #333;
+    padding:16px;
+    text-align: left;
+}
+.middleBox div{
+    width: 50%;
+    font-size: 16px;
+}
+.middleBox div p:first-child{
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 12px;
+}
+.middleBox div:last-child p{
+    margin-left: 16px;
+}
+.borderLeft{
+    left: 19%;
+}
+.borderRight{
+    right:19%;
+}
+.bottomBox{
+    margin-top: 12px;
+    background: #fff;
+    padding:0px 16px;
+    color: #333;
+}
+.bottomBox div{
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+}
+.bottomBox img{
+    height: 16px;
+    margin-top: 16px;
+}
+.buttons{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+}
+.sellOut{
+    background: #fff;
+    color: #ff5151;
+}
+
+
+
+

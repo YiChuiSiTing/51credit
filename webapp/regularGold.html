@@ -10,8 +10,8 @@
 
 <body>
 <div id="titleBar" flex="dir:left">
-    <div id="titleBarBack" >
-        <img src="../static/img/back.png" alt="" id="back" >
+    <div id="titleBarBack">
+        <img src="../static/img/back.png" alt="" id="back">
     </div>
     <div id="titleBarName">
         <p>黄金买入</p>
@@ -20,13 +20,14 @@
         <p>我的黄金</p>
     </div>
 </div>
-<div class="topBox">
+<div class="topBox" style="height: 247px;">
     <p>参考买入金价(元/克)</p>
     <p>277.95</p>
-    <div>
-        <span>灵活存取</span>
-        <span>零手续费</span>
+    <div flex="dir:left" class="progessBar">
+        <p class="sold" style="padding:0"></p>
+        <p class="surplus"></p>
     </div>
+    <p style="margin-top: 12px;margin-bottom:20px">已售13克, 剩余23423423.23克</p>
     <ul flex="dir:left main:center" style="margin-top: 14px;">
         <li>期限</li>
         <li>年化生金率</li>
@@ -49,9 +50,13 @@
         <li>
             <p class="circle"></p>
         </li>
+        <li>
+            <p class="circle"></p>
+        </li>
     </ul>
-    <div class="borderLeft"></div>
-    <div class="borderRight"></div>
+    <div class="borderLeft left"></div>
+    <div class="borderCenter center"></div>
+    <div class="borderRight right"></div>
     <ul flex="dir:left box:mean">
         <li>
             <p>购买</p>
@@ -107,7 +112,7 @@
                 <img src="../static/img/interestRule.png" alt="">
                 <div>
                     <p class="rulesTitle">计息规则</p>
-                    <p class="rulesText">克重 * 年化收益率 * 期限 / 365, 利息在到账日自动转为您的活期黄金克数</p>
+                    <p class="rulesText">克重 * 年化收益率 * 期限 / 365, 到期自动承兑本息,本息将以黄金形式返还到用户账户,并自动转化为活期黄金,详情可以在交易记录中查询。</p>
                 </div>
             </li>
             <li flex="dir:left">
@@ -121,32 +126,32 @@
     </div>
     <div class="buyerList">
         <ul>
-            <li  flex="dir:left main:justify">
+            <li flex="dir:left main:justify">
                 <p>139******98</p>
                 <p>2017-11-11 17:56:23</p>
                 <p>1克</p>
             </li>
-            <li  flex="dir:left main:justify">
+            <li flex="dir:left main:justify">
                 <p>139******98</p>
                 <p>2017-11-11 17:56:23</p>
                 <p>1克</p>
             </li>
-            <li  flex="dir:left main:justify">
+            <li flex="dir:left main:justify">
                 <p>139******98</p>
                 <p>2017-11-11 17:56:23</p>
                 <p>1克</p>
             </li>
-            <li  flex="dir:left main:justify">
+            <li flex="dir:left main:justify">
                 <p>139******98</p>
                 <p>2017-11-11 17:56:23</p>
                 <p>1克</p>
             </li>
-            <li  flex="dir:left main:justify">
+            <li flex="dir:left main:justify">
                 <p>139******98</p>
                 <p>2017-11-11 17:56:23</p>
                 <p>1克</p>
             </li>
-            <li  flex="dir:left main:justify">
+            <li flex="dir:left main:justify">
                 <p>139******98</p>
                 <p>2017-11-11 17:56:23</p>
                 <p>1克</p>
