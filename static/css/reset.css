@@ -230,6 +230,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     background: #fff;
     height: 40px;
     border-bottom: 1px solid #e6e6e6;
+    z-index: 10000;
 }
 #back{
     margin-left: 16px;
@@ -258,6 +259,8 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     font-size: 14px;
     line-height: 44px;
 }
+
+
 
 /*end*/
 
