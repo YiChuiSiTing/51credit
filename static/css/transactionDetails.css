@@ -1,0 +1,75 @@
+#titleBarName{
+    padding-left: 18px;
+}
+.rotate{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* Internet Explorer */
+    -moz-transform:rotate(180deg); /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); /* Opera */
+}
+.transactionlist,.taps{
+    background: #fff;
+    margin-top: 40px;
+    margin-bottom: 58px;
+}
+.transactionlist li{
+    margin: 0px 16px;
+    padding:10px 0px;
+    border-bottom: 1px solid #e6e6e6;
+    height: 64px;
+}
+.transactionlist li:last-child{
+    border:none;
+}
+.title{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+.green,.red{
+    font-size: 14px;
+}
+.taps{
+    text-align: center;
+}
+.taps li{
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0px 16px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #333;
+}
+.taps li:last-child{
+    border:none;
+}
+/*----------------------*/
+.topBox{
+    margin-top: 40px;
+    background: #fff;
+    padding:16px;
+}
+.topBox{
+    background: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+.showImg{
+    height: 14px;
+    margin-left: 10px;
+}
+.assets{
+    font-size: 40px;
+    margin-top: 16px;
+}
+.buttons{
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+}
+.sellOut{
+    background: #fff;
+    color: #ff5151;
+}

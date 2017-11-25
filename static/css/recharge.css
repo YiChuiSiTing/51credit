@@ -1,0 +1,125 @@
+.topBox, .inputNum, .addCard {
+    margin-top: 40px;
+    background: #fff;
+    padding: 16px;
+    height: 64px;
+}
+
+.addCard {
+    height: 48px;
+}
+
+.title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+    margin-top: -4px;
+}
+
+.inputNum {
+    font-size: 16px;
+    color: #333;
+    font-family: "Franklin Gothic Medium";
+    line-height: 32px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.inputNum input {
+    margin-left: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.keepDown {
+    position: absolute;
+    bottom: 16px;
+    padding: 0px 16px;
+    width: 100%;
+}
+
+.downBotton {
+    opacity: .4;
+}
+
+.verificationCode {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+.codeTitle{
+    background: #fff;
+    height: 48px;
+    line-height: 48px;
+    padding: 0px 16px;
+    color: #333;
+    border-bottom: 1px solid #f3f3f3;
+    
+}
+.close{
+    height: 16px;
+    margin-top: 16px;
+}
+.inputMes{
+    padding:16px;
+    background: #fff;
+    font-size: 12px;
+}
+.codeInput{
+    height: 48px;
+    line-height: 48px;
+    margin-top: 20px;
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 64px;
+}
+.codeInput input{
+    font-size: 16px;
+}
+.codeFail{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    height: 412px;
+    font-size: 14px;
+    line-height: 1.5;
+    background: #fff;
+    display: none;
+}
+/*----------------*/
+.arrow_box {
+    position: relative;
+    background: #ff5151;
+    border: 1px solid #ff5151;
+    color: #fff;
+    font-size: 10px;
+    padding: 0px 6px;
+    border-radius: 2px;
+    left:50px;
+    top:-10px;
+    display: none;
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    display: inline-block;
+}
+
+.arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    /*border-bottom-color: #88b7d5;*/
+    border-width: 10px;
+    margin-left: -30px;
+}
+.arrow_box:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #ff5151;
+    border-width: 5px;
+    margin-left: -36px;
+}

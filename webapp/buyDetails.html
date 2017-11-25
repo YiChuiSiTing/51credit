@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>买入详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        .topBox,.orderList{
+            padding:16px;
+            margin-top: 40px;
+            background: #fff;
+        }
+        .DIN{
+            font-size: 30px;
+            margin-top: 12px;
+        }
+        li{
+            padding-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+<div id="titleBar" flex="dir:left">
+    <div id="titleBarBack">
+        <img src="../static/img/back.png" alt="" id="back">
+    </div>
+    <div id="titleBarName" flex="dir:left">
+        <p>买入详情</p>
+    </div>
+</div>
+<div class="topBox">
+    <div flex="dir:left main:justify">
+        <p>买入黄金(克)</p>
+        <p class="red">成功</p>
+    </div>
+    <p class="DIN red">100.0000</p>
+</div>
+<ul class="orderList" style="margin-top: 16px;">
+    <li flex="dir:left main:justify">
+        <p>订单编号</p>
+        <p>12312312312312312312312</p>
+    </li>
+    <li flex="dir:left main:justify">
+        <p>成交金价</p>
+        <p>234.23 / 克</p>
+    </li>
+    <li flex="dir:left main:justify">
+        <p>成交金额</p>
+        <p>2342.32元</p>
+    </li>
+    <li flex="dir:left main:justify">
+        <p>交易日期</p>
+        <p>2017-10-19 12:23:23</p>
+    </li>
+</ul>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
+</body>
+</html>

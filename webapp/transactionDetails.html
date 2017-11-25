@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交易明细</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/transactionDetails.css">
+</head>
+<body>
+<div id="titleBar" flex="dir:left">
+    <div id="titleBarBack">
+        <img src="../static/img/back.png" alt="" id="back">
+    </div>
+    <div id="titleBarName" flex="dir:left">
+        <p>交易明细</p>
+        <img src="../static/img/arrow.png" class="rotate" style="height: 8px;margin-top: 17px;margin-left: 5px">
+    </div>
+</div>
+<ul class="transactionlist">
+    <li>
+        <div flex="dir:left main:justify">
+            <p class="title">活期金买入</p>
+            <p class="grams red">20.139g</p>
+        </div>
+        <div flex="dir:left main:justify" class="time">
+            <p>2017-01-02 12:12:11</p>
+            <p>成功</p>
+        </div>
+    </li>
+    <li>
+        <div flex="dir:left main:justify">
+            <p class="title">活期金卖出</p>
+            <p class="grams green">20.139g</p>
+        </div>
+        <div flex="dir:left main:justify" class="time">
+            <p>2017-01-02 12:12:11</p>
+            <p>成功</p>
+        </div>
+    </li>
+    <li>
+        <div flex="dir:left main:justify">
+            <p class="title">定期金</p>
+            <p class="grams red">20.139g</p>
+        </div>
+        <div flex="dir:left main:justify" class="time">
+            <p>2017-01-02 12:12:11</p>
+            <p>持有中</p>
+        </div>
+    </li>
+    <li>
+        <div flex="dir:left main:justify">
+            <p class="title">定期金</p>
+            <p class="grams green">20.139g</p>
+        </div>
+        <div flex="dir:left main:justify" class="time">
+            <p>2017-01-02 12:12:11</p>
+            <p>已到期</p>
+        </div>
+    </li>
+    <li>
+        <div flex="dir:left main:justify">
+            <p class="title">赠金</p>
+            <p class="grams red">20.139g</p>
+        </div>
+        <div flex="dir:left main:justify" class="time">
+            <p>2017-01-02 12:12:11</p>
+            <p>成功</p>
+        </div>
+    </li>
+</ul>
+<div class="fullScreen" style="display: none">
+    <ul class="taps">
+        <li style="color: #ff5151">全部</li>
+        <li>活期金买入</li>
+        <li>活期金卖出</li>
+        <li>定期金</li>
+        <li>赠金</li>
+    </ul>
+</div>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
+<script>
+    //showTaps
+    $("#titleBarName").click(function () {
+        $(this).children("img").removeClass('rotate')
+        $(".fullScreen").show();
+    })
+    //hideTaps
+    $(".taps li").click(function () {
+        $("#titleBarName img").addClass('rotate')
+        $(".fullScreen").hide();
+    })
+</script>
+</body>
+</html>

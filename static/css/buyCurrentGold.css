@@ -229,3 +229,9 @@
     background: #fff;
     font-weight: bold;
 }
+/*-----------*/
+.canSellNum{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #f3f3f3;
+}
