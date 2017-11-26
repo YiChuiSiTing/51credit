@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提现申请成功</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/recharge.css">
+    <style>
+        .box{
+            padding:20px;
+            margin-top: 40px;
+        }
+        .box img{
+            height: 24px;
+            width: 24px;
+        }
+        .line{
+            height: 37px;
+            background: #ff5151;
+            width: 4px;
+            margin-left: 10px;
+        }
+        .takeMoney{
+            margin-top: 12px;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body style="background: #fff;">
+<div id="titleBar" flex="dir:left">
+    <div id="titleBarBack">
+        <img src="../static/img/back.png" alt="" id="back">
+    </div>
+    <div id="titleBarName">
+        <p>提现申请成功</p>
+    </div>
+</div>
+<div class="box" flex="dir:left box:first">
+    <div flex="dir:top" style="width: 40px;">
+        <img src="../static/img/successRed@2x.png" alt="">
+        <p class="line"></p>
+        <p class="line" style="background: #f3f3f3;"></p>
+        <img src="../static/img/accountGrey.png" alt="">
+    </div>
+    <div>
+        <div>
+            <p style="font-size: 14px;color:#333;">提现申请已提交, 请等待银行处理</p>
+            <p class="takeMoney">提现金额1000.00元</p>
+            <p>2017-09-09</p>
+        </div>
+        <div style="margin-top: 30px">
+            <p style="font-size: 14px;color: #333;">预计到账时间</p>
+            <p style="margin-top: 12px;">2017-09-09</p>
+        </div>
+    </div>
+</div>
+<div class="keepDown">
+    <button class="downBotton" style="opacity: 1">查看现金余额</button>
+</div>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
+</body>
+</html>
