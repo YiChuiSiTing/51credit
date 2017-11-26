@@ -1,6 +1,4 @@
-/**
- * Created by gengbiao on 2017/11/22.
- */
+
 // 基于准备好的dom，初始化echarts实例
 var myChartCurrent = echarts.init(document.getElementById('mainCurrent'));
 // var myChartHistory = echarts.init(document.getElementById('mainHistory'));

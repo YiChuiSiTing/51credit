@@ -1,6 +1,4 @@
-/**
- * Created by shaojinkun on 2017/11/24.
- */
+
 $(function () {
 
 

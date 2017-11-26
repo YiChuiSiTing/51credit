@@ -1,6 +1,4 @@
-/**
- * Created by shaojinkun on 2017/11/23.
- */
+
 var util = {
     goReviousPage: function () {
         window.history.go(-1)
@@ -12,7 +10,7 @@ var util = {
             ['\\.(\\d?)\\.+', '.$1'], //禁止录入两个以上的点
             ['^(\\d+\\.\\d{2}).+', '$1'] //禁止录入小数点后两位以上
         ];
-        for (i = 0; i < regStrs.length; i++) {
+        for (var i = 0; i < regStrs.length; i++) {
             var reg = new RegExp(regStrs[i][0]);
             v = v.replace(reg, regStrs[i][1]);
         }
