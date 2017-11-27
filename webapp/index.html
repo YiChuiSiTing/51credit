@@ -17,7 +17,7 @@
         <p>黄金</p>
     </div>
     <div id="titleBarFunction">
-        <p><a href="./myGold.html">我的黄金</a></p>
+        <p>我的黄金</p>
     </div>
 </div>
 
@@ -129,7 +129,17 @@
 <script src="../static/js/echarts.common.min.js"></script>
 <script src="../static/js/echartObject.js"></script>
 <script src="../static/js/index.js"></script>
-
+<script>
+    $('#titleBarFunction p').on('click',function () {
+        location.href="./myGold.html"
+    })
+    $('.currentGoal').on('click',function () {
+        location.href="./currentGold.html"
+    })
+    $('.certificateItem').on('click',function () {
+        location.href="./regularGold.html"
+    })
+</script>
 </body>
 
 </html>

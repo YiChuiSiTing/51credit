@@ -612,3 +612,6 @@ Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高
 }
 
 
+*:focus { outline: none; }
+input {outline:none;
+border:none}
