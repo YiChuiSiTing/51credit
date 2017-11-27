@@ -56,9 +56,9 @@
         <p style="font-size: 16px;font-weight: blod;margin-top: 24px">可接受金价最大提示值</p>
         <p style="font-size: 14px;margin-top: 10px;">范围越大, 购买成功率越高</p>
         <div flex="dir:left main:justify">
-            <p>-</p>
-            <p>0.5</p>
-            <p>+</p>
+            <p class="priceMinus">-</p>
+            <p class="price">0.5</p>
+            <p class="pricePlus">+</p>
         </div>
         <p flex="dir:left main:justify" style="border-top: 1px solid #f3f3f3;">
             <button id="cancle">取消</button>
@@ -70,5 +70,18 @@
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/js/util.js"></script>
 <script src="../static/js/buyCurrentGold.js"></script>
+<script>
+    window.onload=function () {
+        util.refreshPrice($('.rgpPrice'))
+    }
+    $('.pricePlus').on('click',function () {
+        console.log(buyCurrentGold)
+        buyCurrentGold.plus()
+    })
+    $('.priceMinus').on('click',function () {
+        buyCurrentGold.minus()
+    })
+
+</script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 </div>
 <div class="topBox">
     <p>参考买入金价(元/克)</p>
-    <p>277.95</p>
+    <p class="rgpPrice">277.95</p>
     <div>
         <span>灵活存取</span>
         <span>零手续费</span>
@@ -159,6 +159,9 @@
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/js/util.js"></script>
 <script>
+    window.onload=function () {
+        util.refreshPrice($('.rgpPrice'))
+    }
     $(function () {
         //changeTap
         $(".productMes").click(function () {

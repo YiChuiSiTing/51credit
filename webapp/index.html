@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>51credit</title>
     <link rel="stylesheet" href="../static/css/reset.css">
@@ -33,7 +34,7 @@
 
         <div id="timeGoalprice" flex="dir:right">
             <div>
-                <span>277.95</span>元/克
+                <span class="rgpPrice">277.95</span>元/克
             </div>
         </div>
         <div class="historyTab hide cl">
@@ -130,6 +131,9 @@
 <script src="../static/js/echartObject.js"></script>
 <script src="../static/js/index.js"></script>
 <script>
+    window.onload=function () {
+        util.refreshPrice($('.rgpPrice'))
+    }
     $('#titleBarFunction p').on('click',function () {
         location.href="./myGold.html"
     })

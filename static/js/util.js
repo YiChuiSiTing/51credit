@@ -15,7 +15,18 @@ var util = {
             v = v.replace(reg, regStrs[i][1]);
         }
         return v;
-    }
+    },
+    refreshPrice:function (ele) {
+        var that=this;
+        window.setInterval(function () {
+            ele.text(that.getPrice())
+        },1000)
+    },
+    getPrice:function () {
+        return Math.floor(Math.random()*100)+300;
+    },
+    
+    
 }
 $("#titleBarBack").click(function () {
     util.goReviousPage()

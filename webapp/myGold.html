@@ -35,7 +35,7 @@
         <li  flex="dir:left" style="padding-left: 36px">总收益(元) <img src="../static/img/question.png" alt="" class="question lastQ"></li>
     </ul>
     <ul flex="dir:left main:center" class="bigRed">
-        <li style="">26.78</li>
+        <li style="rgpPrice">26.78</li>
         <li style="">282.98</li>
         <li style="">325.12</li>
     </ul>
@@ -93,6 +93,9 @@
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/js/util.js"></script>
 <script>
+    window.onload=function () {
+        util.refreshPrice($('.rgpPrice'))
+    }
     $(function () {
         //showImg{
         $(".showImg").click(function () {

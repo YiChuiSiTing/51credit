@@ -112,6 +112,7 @@ var buyCurrentGold = {
         $("#enter").click(function () {
             $(".showChangeBox").hide();
             $("#payBox").show();
+            $(".payMesBox").hide();
         })
         this.surePay();
     },
@@ -125,6 +126,41 @@ var buyCurrentGold = {
         $(".know").click(function () {
             $(".fullScreen").hide();
         })
+    },
+    plus:function () {
+        var num=0.1;
+        var price=Number($(".addPrice").text());
+        var saprice=Number($(".price").text())
+        $(".addPrice").text(buyCurrentGold.accAdd(price,num));
+        $('.price').text(buyCurrentGold.accAdd(saprice,num))
+    },
+    minus:function () {
+            var num=0.1;
+            var price=Number($(".addPrice").text());
+            var saprice=Number($(".price").text())
+            if($(".addPrice").text()<=0.5){
+                $(".addPrice").text(0.5);
+                $('.price').text(0.5)
+            }else{
+                $(".addPrice").text(buyCurrentGold.Subtr(price,num));
+                $('.price').text(buyCurrentGold.Subtr(saprice,num))
+            }
+
+    },
+    accAdd:function (arg1,arg2){
+        var r1,r2,m;
+        try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+        try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+        m=Math.pow(10,Math.max(r1,r2))
+        return (arg1*m+arg2*m)/m
+    },
+    Subtr:function (arg1,arg2){
+        var r1,r2,m,n;
+        try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+        try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+        m=Math.pow(10,Math.max(r1,r2));
+        n=(r1>=r2)?r1:r2;
+        return ((arg1*m-arg2*m)/m).toFixed(n);
     }
 
 
