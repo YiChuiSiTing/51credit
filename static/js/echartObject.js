@@ -89,7 +89,8 @@ var optionCurrent = {
             lineStyle:{
                 opacity:0
             }
-        }
+        },
+        tickLength:1
 
     },
     dataZoom: [{
@@ -139,6 +140,7 @@ var optionCurrent = {
             // data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         }
     ],
+
 
 };
 

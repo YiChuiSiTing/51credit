@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/currentGold.css">
+    <link rel="stylesheet" href="../static/css/dropload.css">
+    <style>
+        .downBottonfix{
+            position: fixed;
+            bottom: 0;
+        }
+        .dropload-refresh{
+            /*display: none;*/
+        }
+    </style>
 </head>
 
 <body>
@@ -124,8 +134,8 @@
             </li>
         </ul>
     </div>
-    <div class="buyerList">
-        <ul>
+    <div class="buyerList content">
+        <ul class="lists">
             <li flex="dir:left main:justify">
                 <p>139******98</p>
                 <p>2017-11-11 17:56:23</p>
@@ -163,6 +173,7 @@
 
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/js/util.js"></script>
+<script src="../static/js/dropload.min.js"></script>
 <script>
     window.onload=function () {
         util.refreshPrice($('.rgpPrice'))
@@ -174,17 +185,70 @@
             $(".buyerNum").removeClass('tapSelected');
             $(".rules").show();
             $(".buyerList").hide();
+            $('.downBotton').removeClass('downBottonfix')
         })
         $(".buyerNum").click(function () {
             $(this).addClass('tapSelected');
             $(".productMes").removeClass('tapSelected');
             $(".rules").hide();
             $(".buyerList").show();
+            $('.downBotton').addClass('downBottonfix')
         })
         //toNextPage
         $(".next").click(function () {
             window.location.href = './buyCurrentGold.html'
         })
+    })
+    var counter = 0;
+    // 每页展示6个
+    var num = 6;
+    var pageStart = 0,pageEnd = 0;
+
+    $('.content').dropload({
+        scrollArea : $('.buyerList'),
+        loadDownFn : function(me){
+            //测试数据在../static/json/more.json,与后台数据字段不一致的话,直接修改就行
+            $.ajax({
+                type: 'GET',
+                url: '../static/json/record.json',
+                dataType: 'json',
+                success: function(data){
+                    console.log(data)
+                    var result = '';
+                    counter++;
+                    pageEnd = num * counter;
+                    pageStart = pageEnd - num;
+
+                    for(var i = pageStart; i < pageEnd; i++){
+
+                        result +=  '<li flex="dir:left main:justify">'
+                                +'<p class="">'+data.lists[i].mobile+'</p>'
+                                +'<p class="">'+data.lists[i].date+'</p>'
+                                +'<p class="">'+data.lists[i].num+'克</p>'
+                                +'</li>';
+                        if((i + 1) >= data.lists.length){
+                            // 锁定
+                            me.lock();
+                            // 无数据
+                            me.noData();
+                            break;
+                        }
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        $('.lists').append(result);
+
+                        // 每次数据加载完，必须重置
+                        me.resetload();
+                    },1000);
+                },
+                error: function(xhr, type){
+//                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        }
     })
 </script>
 </body>
