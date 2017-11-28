@@ -50,6 +50,16 @@
         <p class="DIN">12.9993</p>
     </div>
 </div>
+<div class="cashBox" flex="dir:left main:justify">
+    <div>
+        <p>现金余额(元)</p>
+        <p class="DIN ">36.9988</p>
+    </div>
+
+    <div class="arrow">
+        <img src="../static/img/arrowRight.png" alt="">
+    </div>
+</div>
 <div class="bottomBox">
     <div flex="dir:left main:justify" style="border-bottom: 1px solid #f3f3f3;">
         <p>实名认证</p>
@@ -127,6 +137,9 @@
         })
         $(".sellOut").click(function () {
             location.href="./goldSell.html"
+        })
+        $(".cashBox").click(function () {
+            location.href="./cashBalance.html"
         })
     })
 </script>

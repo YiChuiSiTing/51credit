@@ -42,7 +42,7 @@
     margin-top: 4px;
 }
 
-.middleBox{
+.middleBox,.cashBox{
     margin-top: 12px;
     background: #fff;
     font-size: 12px;
@@ -50,7 +50,7 @@
     padding:16px;
     text-align: left;
 }
-.middleBox div{
+.middleBox div,.middleBox div{
     width: 50%;
     font-size: 16px;
 }
@@ -61,6 +61,17 @@
 }
 .middleBox div:last-child p{
     margin-left: 16px;
+}
+.cashBox div p:first-child{
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 12px;
+}
+.cashBox div p:last-child{
+    font-size: 16px;
+    color: #999;
+    /*margin-bottom: 12px;*/
+    color: #000;
 }
 .borderLeft{
     left: 19%;
@@ -80,6 +91,10 @@
     line-height: 48px;
 }
 .bottomBox img{
+    height: 16px;
+    margin-top: 16px;
+}
+.arrow img{
     height: 16px;
     margin-top: 16px;
 }

@@ -37,7 +37,7 @@
 <div class="buyerTips">
     <div flex="dir:left" class="agreement">
         <img src="../static/img/read.png" alt="" class="checkImg">
-        <p>已阅读并同意《黄金消费综合服务协议》</p>
+        <p class="rulesText">已阅读并同意《黄金消费综合服务协议》</p>
     </div>
     <div class="tipsText">
         <p>温馨提示:</p>
@@ -81,7 +81,9 @@
     $('.priceMinus').on('click',function () {
         buyCurrentGold.minus()
     })
-
+    $('.rulesText').click(function () {
+        window.location.href = './goldAgreement.html'
+    })
 </script>
 </body>
 </html>

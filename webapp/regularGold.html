@@ -194,6 +194,9 @@
             $(".buyerList").show();
             $('.downBotton').addClass('downBottonfix')
         })
+        $('.rulesText').click(function () {
+            window.location.href = './goldAgreement.html'
+        })
         //toNextPage
         $(".next").click(function () {
             window.location.href = './buyCurrentGold.html'
@@ -213,7 +216,7 @@
                 url: '../static/json/record.json',
                 dataType: 'json',
                 success: function(data){
-                    console.log(data)
+//                    console.log(data)
                     var result = '';
                     counter++;
                     pageEnd = num * counter;
