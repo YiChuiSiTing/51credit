@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64e6660b-94cc-42d0-a4ca-799db764465d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/goldAgreement.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/myGold.css" afterPath="$PROJECT_DIR$/static/css/myGold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/currentGold.html" afterPath="$PROJECT_DIR$/webapp/currentGold.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/goldSell.html" afterPath="$PROJECT_DIR$/webapp/goldSell.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/informationDetail.html" afterPath="$PROJECT_DIR$/webapp/informationDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/myGold.html" afterPath="$PROJECT_DIR$/webapp/myGold.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/regularGold.html" afterPath="$PROJECT_DIR$/webapp/regularGold.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/goldAgreement.html" afterPath="$PROJECT_DIR$/webapp/goldAgreement.html" />
     </list>
     <ignored path="51credit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goldAgreement.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="goldAgreement.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/goldAgreement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="208" column="6" selection-start-line="208" selection-start-column="6" selection-end-line="208" selection-end-column="6" />
+            <state relative-caret-position="135">
+              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -112,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regularGold.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="regularGold.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/regularGold.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
@@ -163,8 +157,8 @@
         <option value="$PROJECT_DIR$/webapp/currentGold.html" />
         <option value="$PROJECT_DIR$/webapp/goldSell.html" />
         <option value="$PROJECT_DIR$/webapp/informationDetail.html" />
-        <option value="$PROJECT_DIR$/webapp/goldAgreement.html" />
         <option value="$PROJECT_DIR$/webapp/regularGold.html" />
+        <option value="$PROJECT_DIR$/webapp/goldAgreement.html" />
       </list>
     </option>
   </component>
@@ -389,12 +383,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511788580667</updated>
       <workItem from="1511788582000" duration="192000" />
-      <workItem from="1511788970683" duration="15413000" />
+      <workItem from="1511788970683" duration="15911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15605000" />
+    <option name="totallyTimeSpent" value="16103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="37" width="1440" height="797" extended-state="6" />
@@ -662,10 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/goldAgreement.html">
+    <entry file="file://$PROJECT_DIR$/webapp/regularGold.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="208" column="6" selection-start-line="208" selection-start-column="6" selection-end-line="208" selection-end-column="6" />
+        <state relative-caret-position="196">
+          <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -678,10 +672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/regularGold.html">
+    <entry file="file://$PROJECT_DIR$/webapp/goldAgreement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
+        <state relative-caret-position="135">
+          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
           <folding />
         </state>
       </provider>
