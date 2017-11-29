@@ -8,6 +8,7 @@
     padding-top: 16px;
 }
 .showImg{
+    width: 20px;
     height: 14px;
     margin-top: 18px;
     margin-left: 4px;
@@ -32,7 +33,7 @@
     width: 33.33%;
 }
 .bigRed li{
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 12px;
     color: #333;
 }
@@ -47,7 +48,8 @@
     background: #fff;
     font-size: 12px;
     color: #333;
-    padding:16px;
+    padding:12px 16px 12px 16px;
+
     text-align: left;
 }
 .middleBox div,.middleBox div{
@@ -57,7 +59,7 @@
 .middleBox div p:first-child{
     font-size: 12px;
     color: #999;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 .middleBox div:last-child p{
     margin-left: 16px;
@@ -65,7 +67,7 @@
 .cashBox div p:first-child{
     font-size: 12px;
     color: #999;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .cashBox div p:last-child{
     font-size: 16px;

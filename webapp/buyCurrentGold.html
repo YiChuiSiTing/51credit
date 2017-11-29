@@ -48,7 +48,7 @@
 <div class="buyerTips">
     <div flex="dir:left" class="agreement">
         <img src="../static/img/read.png" alt="" class="checkImg">
-        <p>已阅读并同意《黄金消费综合服务协议》</p>
+        <p class="small-font">已阅读并同意《黄金消费综合服务协议》</p>
     </div>
     <div class="tipsText">
         <p>温馨提示:</p>
@@ -59,21 +59,21 @@
         <p>4. 请您先充值再购买</p>
     </div>
 </div>
-<button class="downBotton keepDown" disabled="disabled">立即买入</button>
+<button class="downBotton keepDown" disabled="disabled" style="height: 52px">立即买入</button>
 <!--dialog-->
 <div class="fullScreen payMesBox"
      style="display: none"
 >
     <div class="showChangeBox">
-        <p style="font-size: 16px;font-weight: blod;margin-top: 24px">可接受金价最大提示值</p>
+        <p style="font-size: 16px;font-weight: bold;margin-top: 24px">可接受金价最大提示值</p>
         <p style="font-size: 14px;margin-top: 10px;">范围越大, 购买成功率越高</p>
         <div flex="dir:left main:justify">
-            <p class="priceMinus">-</p>
+            <p class="priceMinus"><img src="../static/img/minus.png" alt=""></p>
             <p class="price">0.5</p>
-            <p class="pricePlus">+</p>
+            <p class="pricePlus"><img src="../static/img/plus.png" alt=""></p>
         </div>
         <p flex="dir:left main:justify" style="border-top: 1px solid #f3f3f3;">
-            <button id="cancle">取消</button>
+            <button id="cancle" style="font-weight: inherit">取消</button>
             <button id="enter">确定</button>
         </p>
     </div>
@@ -98,7 +98,7 @@
                 <p>需付款</p>
                 <p class="red">1000.00元</p>
             </div>
-            <button class="downBotton surePay">确认支付</button>
+            <button class="downBotton surePay" >确认支付</button>
         </div>
     </div>
 </div>
@@ -126,6 +126,10 @@
     })
     $('.priceMinus').on('click',function () {
         buyCurrentGold.minus()
+    })
+    $('.numInput').on('keyup',function () {
+        var length=$(this).length;
+        console.log(length)
     })
 </script>
 </body>

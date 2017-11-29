@@ -26,12 +26,13 @@
         input{
             font-size: 14px;
             color: #333;
-            line-height: 48px;
+            line-height: 46px;
             width: 70%;
-            height: 44px;
+
         }
         button{
             border: none;
+            background: #fff;
         }
     </style>
 </head>
@@ -52,13 +53,13 @@
 <div class="takeCode" style="margin-top: 0px">
     <div flex="dir:left main:justify" style="border-bottom: 1px solid #f3f3f3;">
         <input type="number" placeholder="请输入手机号">
-        <button class="getCode">获取验证码</button>
+        <button class="getCode" style="color: #ff5151">获取验证码</button>
     </div>
 </div>
 <div class="takeCode" style="margin-top: 0px">
-    <div>
+
         <input type="text" placeholder="请输入验证码">
-    </div>
+
 </div>
 <div style="padding: 0px 16px;margin-top: 80px">
     <button class="downBotton">确定</button>
@@ -78,7 +79,7 @@
     function sendCode(thisBtn)
     {
         btn = thisBtn;
-        btn.text(nums+'秒后可重新获取');
+        btn.text(nums+'s');
 
         clock = setInterval(doLoop, 1000); //一秒执行一次
     }
@@ -87,7 +88,7 @@
         nums--;
         if(nums > 0){
             btn.attr('disabled','disabled');//将按钮置为不可点击
-            btn.text(nums+'秒后可重新获取');
+            btn.text(nums+'s');
         }else{
             clearInterval(clock); //清除js定时器
             btn.removeAttr('disabled');

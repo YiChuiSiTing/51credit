@@ -17,6 +17,7 @@
 #timeGoalprice span{
     font-size: 28px;
     color: #ff5151;
+    font-family: "DIN Alternate";
 }
 
 
@@ -42,7 +43,7 @@
 }
 /*end*/
 #messageNotice{
-    margin: 0px 16px 18px 16px;
+    margin: 0px 16px 12px 16px;
     line-height:40px;
 }
 #messageNotice img{
@@ -74,17 +75,20 @@
     margin: 0px 0px 20px 0px;
 }
 .currentGoalItem,.certificateItem{
-    margin-left: 16px;
+    /*margin-left: 16px;*/
+}
+.currentGoalItem{
+    /*margin-left: 16px;*/
 }
 .certificateGoal{
 
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 16px;
     padding-bottom: 20px;
 }
 .currentGoalTitle{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 18px;
+    margin-bottom: 36px;
     font-size: 18px;
     font-weight: bold;
     color: #333333;
@@ -144,17 +148,19 @@
     font-size: 16px;
     font-family: "DIN Alternate";
     color: #ff5151;
+    font-weight: bold;
 
 }
 .goalItemP span{
     font-size: 24px;
+    font-weight: bolder;
 }
 .goalItemLeft{
     width:61.3%;
 
 }
 .goalItemTitle{
-    margin-top: 10px;
+    margin-top: 2px;
 }
 .certificateGoalProject{
     font-size: 14px;
@@ -162,15 +168,15 @@
 }
 .certificateGoalProject{
 
-    margin-bottom: 18px;
-    margin-top: 40px;
+    margin-bottom: 8px;
+    margin-top: 20px;
 }
 .goalItemRight p{
     font-size: 12px;
-    color: #666666;
+    color: #999999;
 }
 .itemDay{
-    font-size: 16px;
+    font-size: 18px;
     color: #333333;
     font-family: "DIN Alternate";
 }

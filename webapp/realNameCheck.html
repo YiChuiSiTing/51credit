@@ -42,7 +42,7 @@
             position: relative;
         }
         .checkFail span{
-            background: #ff5151;
+            /*background: #ff5151;*/
             position: relative;
             z-index: -1;
             padding:0px 10px;
@@ -51,6 +51,9 @@
             position: absolute;
             margin-top: -20px;
             padding:0px 10px;
+        }
+        .clearName,.clearIdcard{
+            display: none;
         }
     </style>
 </head>
@@ -64,16 +67,17 @@
     </div>
 </div>
 <div class="top" flex="dir:left main:justify">
-    <input type="text" placeholder="请输入您的真实姓名">
-    <img src="../static/img/delete.png" alt="">
+    <input type="text" placeholder="请输入您的真实姓名" class="name">
+    <img src="../static/img/delete.png" alt="" class="clearName">
 </div>
 <div class="takeCode" style="margin-top: 0px">
-    <div style="border-top: 1px solid #f3f3f3;">
-        <input type="number" placeholder="请输入身份证号" style="height: 45px;margin-top: -3px;">
+    <div style="border-top: 1px solid #f3f3f3;"flex="dir:left main:justify">
+        <input type="number" placeholder="请输入身份证号" style="height: 45px;margin-top: -3px;" class="idcard">
+        <img src="../static/img/delete.png" alt="" class="clearIdcard">
     </div>
 </div>
 <div style="padding: 0px 16px;margin-top: 80px">
-    <button class="downBotton">确定</button>
+    <button class="downBotton" style="border-radius:2px">确定</button>
 </div>
 <div flex="main:center">
     <div class="checkFail">
@@ -87,6 +91,36 @@
     $('.downBotton').on('click',function () {
         location.href="./bindBankCard.html"
     })
+
+    $('.name').on('keyup',function () {
+        if($(this).val().length==0){
+            $('.clearName').hide()
+        }else{
+            $('.clearName').show()
+        }
+
+    })
+    $('.idcard').on('keyup',function () {
+        if($(this).val().length==0){
+            $('.clearIdcard').hide()
+        }else{
+            $('.clearIdcard').show()
+        }
+
+    })
+    $('.name').on('blur',function () {
+            $('.clearName').hide()
+    })
+    $('.idcard').on('blur',function () {
+            $('.clearIdcard').hide()
+    })
+    $('.clearIdcard').on('click',function () {
+        $('.idcard').val('');
+    })
+    $('.clearName').on('click',function () {
+        $('.name').val('');
+    })
+
 </script>
 </body>
 </html>

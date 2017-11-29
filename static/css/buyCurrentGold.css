@@ -7,7 +7,7 @@
 .rgpText{
     font-size: 12px;
     color: #999;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 .rgpTitle{
     font-size: 16px;
@@ -25,7 +25,7 @@
 }
 .purchaseText{
     height: 64px;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #e6e6e6;
 }
 .purchaseMes p{
     font-size: 10px;
@@ -35,7 +35,7 @@
     margin-left:12px;
     margin-right: 4px;
     height: 14px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 #balance{
     color: #ff5151;
@@ -46,7 +46,7 @@
 .purchaseText div p{
     font-size: 12px;
     color: #999;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 .bigRedText{
     font-size: 14px;
@@ -122,7 +122,7 @@
 }
 /*end*/
 .showChangeBox{
-    height: 196px;
+    /*height: 196px;*/
     width: 280px;
     background: #fff;
     position: absolute;
@@ -134,12 +134,12 @@
     color: #333;
 }
 .showChangeBox div{
-    margin:20px 24px;
+    margin:20px 24px 24px 24px;
     background: #f3f3f3;
     font-size: 17px;
     color: #333;
     padding:5px 10px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 .showChangeBox button{
     width: 50%;
@@ -234,4 +234,17 @@
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid #f3f3f3;
+}
+.small-font{
+
+    /*font-size:12px;*/
+    /*-webkit-transform-origin-x: 0;*/
+    /*-webkit-transform: scale(0.833);*/
+}
+.showChangeBox{
+    border-radius:2px ;
+}
+.price{
+    font-family: "DIN Alternate";
+    color: #333333;
 }
