@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定银行卡</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        .top,.takeCode{
+            margin-top: 40px;
+            height: 48px;
+            background: #fff;
+            line-height: 48px;
+            padding: 0px 16px;
+        }
+        img{
+            height: 14px;
+            margin-top: 17px;
+        }
+        .bankName{
+            height: 30px;
+            line-height: 30px;
+            padding: 0px 16px;
+            color: #666;
+        }
+        input{
+            font-size: 14px;
+            color: #333;
+            line-height: 46px;
+            width: 70%;
+
+        }
+        button{
+            border: none;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="titleBar" flex="dir:left">
+    <div id="titleBarBack">
+        <img src="../static/img/back.png" alt="" id="back">
+    </div>
+    <div id="titleBarName">
+        <p>绑定银行卡</p>
+    </div>
+</div>
+<div class="top" flex="dir:left main:justify">
+    <input type="number" placeholder="请输入银行卡号">
+    <img src="../static/img/delete.png" alt="">
+</div>
+<p class="bankName">信用卡 / 中国工商银行</p>
+<div class="takeCode" style="margin-top: 0px">
+    <div flex="dir:left main:justify" style="border-bottom: 1px solid #f3f3f3;">
+        <input type="number" placeholder="请输入手机号">
+        <button class="getCode" style="color: #ff5151">获取验证码</button>
+    </div>
+</div>
+<div class="takeCode" style="margin-top: 0px">
+
+        <input type="text" placeholder="请输入验证码">
+
+</div>
+<div style="padding: 0px 16px;margin-top: 80px">
+    <button class="downBotton">确定</button>
+</div>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
+<script>
+    $('.downBotton').on('click',function () {
+        location.href="./index.html"
+    })
+    var clock = '';
+    var nums = 3;
+    var btn;
+    $('.getCode').on('click',function () {
+        sendCode($('.getCode'))
+    })
+    function sendCode(thisBtn)
+    {
+        btn = thisBtn;
+        btn.text(nums+'s');
+
+        clock = setInterval(doLoop, 1000); //一秒执行一次
+    }
+    function doLoop()
+    {
+        nums--;
+        if(nums > 0){
+            btn.attr('disabled','disabled');//将按钮置为不可点击
+            btn.text(nums+'s');
+        }else{
+            clearInterval(clock); //清除js定时器
+            btn.removeAttr('disabled');
+            btn.text('获取验证码');
+            nums = 3; //重置时间
+        }
+    }
+</script>
+</body>
+</html>

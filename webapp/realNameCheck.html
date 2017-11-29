@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实名认证</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        .top,.takeCode{
+            margin-top: 40px;
+            height: 48px;
+            background: #fff;
+            line-height: 48px;
+            padding: 0px 16px;
+        }
+        img{
+            height: 14px;
+            margin-top: 17px;
+        }
+        .bankName{
+            height: 30px;
+            line-height: 30px;
+            padding: 0px 16px;
+            color: #666;
+        }
+        input{
+            font-size: 14px;
+            color: #333;
+            line-height: 48px;
+            width: 70%;
+            height: 48px;
+        }
+        .checkFail{
+            font-size: 14px;
+            padding:16px;
+            background: rgba(0,0,0,.7);
+            color: #fff;
+            display: inline-block;
+            border-radius: 2px;
+            margin: 0 auto;
+            margin-top: 30px;
+            position: relative;
+        }
+        .checkFail span{
+            /*background: #ff5151;*/
+            position: relative;
+            z-index: -1;
+            padding:0px 10px;
+        }
+        .checkFail p{
+            position: absolute;
+            margin-top: -20px;
+            padding:0px 10px;
+        }
+        .clearName,.clearIdcard{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="titleBar" flex="dir:left">
+    <div id="titleBarBack">
+        <img src="../static/img/back.png" alt="" id="back">
+    </div>
+    <div id="titleBarName">
+        <p>实名认证</p>
+    </div>
+</div>
+<div class="top" flex="dir:left main:justify">
+    <input type="text" placeholder="请输入您的真实姓名" class="name">
+    <img src="../static/img/delete.png" alt="" class="clearName">
+</div>
+<div class="takeCode" style="margin-top: 0px">
+    <div style="border-top: 1px solid #f3f3f3;"flex="dir:left main:justify">
+        <input type="number" placeholder="请输入身份证号" style="height: 45px;margin-top: -3px;" class="idcard">
+        <img src="../static/img/delete.png" alt="" class="clearIdcard">
+    </div>
+</div>
+<div style="padding: 0px 16px;margin-top: 80px">
+    <button class="downBotton" style="border-radius:2px">确定</button>
+</div>
+<div flex="main:center">
+    <div class="checkFail">
+        <span>信息不匹配, 实名认证失败</span>
+        <p>信息不匹配, 实名认证失败</p>
+    </div>
+</div>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
+<script>
+    $('.downBotton').on('click',function () {
+        location.href="./bindBankCard.html"
+    })
+
+    $('.name').on('keyup',function () {
+        if($(this).val().length==0){
+            $('.clearName').hide()
+        }else{
+            $('.clearName').show()
+        }
+
+    })
+    $('.idcard').on('keyup',function () {
+        if($(this).val().length==0){
+            $('.clearIdcard').hide()
+        }else{
+            $('.clearIdcard').show()
+        }
+
+    })
+    $('.name').on('blur',function () {
+            $('.clearName').hide()
+    })
+    $('.idcard').on('blur',function () {
+            $('.clearIdcard').hide()
+    })
+    $('.clearIdcard').on('click',function () {
+        $('.idcard').val('');
+    })
+    $('.clearName').on('click',function () {
+        $('.name').val('');
+    })
+
+</script>
+</body>
+</html>

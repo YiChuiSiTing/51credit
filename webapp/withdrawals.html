@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提现</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/recharge.css">
+</head>
+<body>
+<div id="titleBar" flex="dir:left">
+    <div id="titleBarBack">
+        <img src="../static/img/back.png" alt="" id="back">
+    </div>
+    <div id="titleBarName">
+        <p>提现</p>
+    </div>
+</div>
+<div class="topBox" flex="fir:left">
+    <img src="../static/img/gdBank.png" alt="" style="width: 32px">
+    <div style="margin-left: 16px">
+        <p class="title">光大银行(尾号4404)</p>
+        <p>可转出至该卡余额: <span class="red">234.23元</span></p>
+    </div>
+</div>
+<div class="inputNum">
+    <span style="color: #333333">¥</span>
+    <input type="number" placeholder="请输入提现金额" class="DIN" style="width: 70%">
+    <p class="red" style="float: right;">全部提现</p>
+    <div class="preview">
+        <span class="arrow_box">
+            <span class="logo">预估手续费:<span class="grams">9.99</span>元</span>
+        </span>
+    </div>
+</div>
+<div class="keepDown">
+    <button class="downBotton" disabled="disabled">确定提现</button>
+</div>
+<div class="fullScreen" style="display: none">
+    <div class="verificationCode">
+        <div flex="dir:left main:justify" class="codeTitle">
+            <img src="../static/img/close.png" alt="" class="close takeCode">
+            <p style="font-size: 16px;">输入短信验证码</p>
+            <p style="font-size: 14px;">确认</p>
+        </div>
+        <div class="inputMes">
+            <p>已发送至手机号185****2889,<span class="red fondHelp">收不到验证码?</span></p>
+            <div class="codeInput" flex="dir:left main:justify">
+                <input type="number" placeholder="请输入短信验证码">
+                <p class="red">获取验证码</p>
+            </div>
+        </div>
+    </div>
+    <div class="codeFail">
+        <div flex="dir:left main:justify" class="codeTitle">
+            <img src="../static/img/close.png" alt="" class="close fondCode">
+            <p style="font-size: 16px;">收不到验证码</p>
+            <p style="font-size: 14px;"></p>
+        </div>
+        <div class="inputMes">
+            <p>1.请检查短信是否被手机安全中心拦截;</p>
+            <p>2.如银行预留手机号变更,请重新绑定;</p>
+            <p>3.获取更多帮助,请拨打客服电话</p>
+            <p style="color:#333;font-size: 16px;margin-left: 10px;font-family: 'Semibold'">400-650-6932</p>
+        </div>
+    </div>
+</div>
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/util.js"></script>
+<script>
+    $(".inputNum input").on("input", function () {
+        if ($(this).val() != "" && $(this).val() != 0) {
+            $(".downBotton").removeAttr("disabled").css("opacity", '1');
+            $(".arrow_box").show()
+        } else {
+            $(".downBotton").attr("disabled", "disabled").css("opacity", '.4');
+        }
+    })
+    $(".downBotton").click(function () {
+        $(".fullScreen").show();
+    })
+    $(".fondHelp").click(function () {
+        $(".codeFail").show();
+        $(".verificationCode").hide();
+    })
+    $(".takeCode").click(function () {
+        $(".fullScreen").hide();
+    })
+    $(".fondCode").click(function () {
+        $(".codeFail").hide();
+        $(".verificationCode").show();
+    })
+</script>
+</body>
+</html>

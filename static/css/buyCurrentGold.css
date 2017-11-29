@@ -1,0 +1,250 @@
+.realTimeGoldPrice{
+    background: #fff;
+    height: 64px;
+    margin-top: 52px;
+    padding:0px 16px;
+}
+.rgpText{
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+}
+.rgpTitle{
+    font-size: 16px;
+    color: #333;
+    padding-top: 8px;
+}
+.purchaseInfo{
+    margin-top: 12px;
+    padding:0px 16px;
+    background: #fff;
+}
+.purchaseInfo input{
+    height: 64px;
+    font-size: 16px;
+}
+.purchaseText{
+    height: 64px;
+    border-top: 1px solid #e6e6e6;
+}
+.purchaseMes p{
+    font-size: 10px;
+    color: #999;
+}
+.purchaseMes img{
+    margin-left:12px;
+    margin-right: 4px;
+    height: 14px;
+    margin-top: 8px;
+}
+#balance{
+    color: #ff5151;
+}
+.balanceMes{
+    display: none;
+}
+.purchaseText div p{
+    font-size: 12px;
+    color: #999;
+    margin-top: 6px;
+}
+.bigRedText{
+    font-size: 14px;
+    width: 50px;
+    padding-top: 15px;
+}
+.buyerTips{
+    padding:0px 16px;
+}
+.agreement{
+    font-size: 10px;
+    color: #999;
+    margin-top: 12px;
+}
+.agreement img{
+    height: 16px;
+}
+.agreement p{
+    margin-left: 6px;
+}
+.tipsText{
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.keepDown{
+    position: absolute;
+    bottom: 0px;
+    opacity: .45;
+}
+.RMB{
+    font-size: 16px;
+    line-height: 64px;
+    display: none;
+    color: #333;
+}
+/*arrow*/
+.arrow_box {
+    position: relative;
+    background: #ff5151;
+    border: 1px solid #ff5151;
+    color: #fff;
+    font-size: 10px;
+    top:46px;
+    right: 140px;
+    padding: 0px 6px;
+    border-radius: 2px;
+    display: none;
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    /*border-bottom-color: #88b7d5;*/
+    border-width: 10px;
+    margin-left: -30px;
+}
+.arrow_box:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #ff5151;
+    border-width: 5px;
+    margin-left: -36px;
+}
+/*end*/
+.showChangeBox{
+    /*height: 196px;*/
+    width: 280px;
+    background: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -98px;
+    margin-left: -140px;
+    text-align: center;
+    color: #333;
+}
+.showChangeBox div{
+    margin:20px 24px 24px 24px;
+    background: #f3f3f3;
+    font-size: 17px;
+    color: #333;
+    padding:5px 10px;
+    border-radius: 2px;
+}
+.showChangeBox button{
+    width: 50%;
+    color: #333;
+    height: 48px;
+    border-radius: 0px;
+    background: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+#cancle{
+    border-right: 1px solid #f3f3f3;
+}
+#enter{
+    color: #1a97ff;
+}
+#payBox{
+    height: 412px;
+    background: #fff;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.payBoxTitle{
+    height: 48px;
+    border-bottom: 1px solid #f3f3f3;
+    position: relative;
+}
+.payBoxTitle img{
+    width: 16px;
+    position: absolute;
+    left: 16px;
+    top:16px;
+}
+.payBoxTitle p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 48px;
+}
+#payMes{
+    padding:0px 16px 16px 16px;
+}
+.buyMes{
+    height: 86px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 14px;
+    color: #333;
+}
+.needPay{
+    font-size: 16px;
+    color: #666;
+    margin-top: 40px;
+}
+.surePay{
+    border-radius: 4px;
+    border:none;
+    margin-top: 147px;
+}
+.alertTips{
+    z-index: 100000;
+}
+.alertMes{
+    background: #fff;
+    width: 74%;
+    margin-left: 13%;
+    border-radius: 2px;
+    height: 150px;
+    margin-top: 60%;
+    color: #666;
+    padding:0px 28px;
+    position: relative;
+}
+.know{
+    font-size: 16px;
+    color: #1a97ff;
+    position: absolute;
+    border:none;
+    border-top:1px solid #f3f3f3;
+    width: 100%;
+    bottom:0px;
+    left:0px;
+    height: 48px;
+    border-radius: 0px;
+    background: #fff;
+    font-weight: bold;
+}
+/*-----------*/
+.canSellNum{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.small-font{
+
+    /*font-size:12px;*/
+    /*-webkit-transform-origin-x: 0;*/
+    /*-webkit-transform: scale(0.833);*/
+}
+.showChangeBox{
+    border-radius:2px ;
+}
+.price{
+    font-family: "DIN Alternate";
+    color: #333333;
+}
