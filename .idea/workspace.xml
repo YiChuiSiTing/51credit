@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64e6660b-94cc-42d0-a4ca-799db764465d" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/buyCurrentGold.css" afterPath="$PROJECT_DIR$/static/css/buyCurrentGold.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/index.css" afterPath="$PROJECT_DIR$/static/css/index.css" />
@@ -9,6 +10,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/util.js" afterPath="$PROJECT_DIR$/static/js/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/bindBankCard.html" afterPath="$PROJECT_DIR$/webapp/bindBankCard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/buyCurrentGold.html" afterPath="$PROJECT_DIR$/webapp/buyCurrentGold.html" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/index.css" afterPath="$PROJECT_DIR$/static/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/reset.css" afterPath="$PROJECT_DIR$/static/css/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/flexible.js" afterPath="$PROJECT_DIR$/static/js/flexible.js" />
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/index.html" afterPath="$PROJECT_DIR$/webapp/index.html" />
     </list>
     <ignored path="51credit.iws" />
@@ -30,6 +36,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-705">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#2;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="194" column="1" selection-start-line="194" selection-start-column="1" selection-end-line="194" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flexible.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/flexible.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buyCurrentGold.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/buyCurrentGold.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1209">
+              <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
       <file leaf-file-name="buyCurrentGold.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/buyCurrentGold.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,9 +124,17 @@
       <file leaf-file-name="buyCurrentGold.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/buyCurrentGold.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="360">
               <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
               <folding />
+=======
+            <state relative-caret-position="1792">
+              <caret line="262" column="20" selection-start-line="262" selection-start-column="20" selection-end-line="262" selection-end-column="20" />
+              <folding>
+                <marker date="1511958554369" expanded="true" signature="1429:1453" placeholder="{...}" />
+              </folding>
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
             </state>
           </provider>
         </entry>
@@ -101,10 +172,17 @@
         <option value="$PROJECT_DIR$/webapp/recharge.html" />
         <option value="$PROJECT_DIR$/webapp/withdrawals.html" />
         <option value="$PROJECT_DIR$/static/css/recharge.css" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/webapp/bindBankCard.html" />
+        <option value="$PROJECT_DIR$/webapp/buyCurrentGold.html" />
+        <option value="$PROJECT_DIR$/static/css/buyCurrentGold.css" />
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
         <option value="$PROJECT_DIR$/webapp/goldSell.html" />
         <option value="$PROJECT_DIR$/static/css/buySucess.css" />
         <option value="$PROJECT_DIR$/webapp/cashBalance.html" />
         <option value="$PROJECT_DIR$/static/js/flexible.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/static/js/util.js" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/webapp/index.html" />
@@ -112,6 +190,11 @@
         <option value="$PROJECT_DIR$/static/css/reset.css" />
         <option value="$PROJECT_DIR$/webapp/buyCurrentGold.html" />
         <option value="$PROJECT_DIR$/static/css/buyCurrentGold.css" />
+=======
+        <option value="$PROJECT_DIR$/static/css/reset.css" />
+        <option value="$PROJECT_DIR$/webapp/index.html" />
+        <option value="$PROJECT_DIR$/static/css/index.css" />
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
       </list>
     </option>
   </component>
@@ -342,14 +425,22 @@
       <updated>1511788580667</updated>
       <workItem from="1511788582000" duration="192000" />
       <workItem from="1511788970683" duration="16087000" />
+<<<<<<< HEAD
       <workItem from="1511864353788" duration="17053000" />
       <workItem from="1511960636718" duration="424000" />
       <workItem from="1511962037931" duration="3244000" />
+=======
+      <workItem from="1511864353788" duration="21304000" />
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="37000000" />
+=======
+    <option name="totallyTimeSpent" value="37583000" />
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="708" extended-state="6" />
@@ -741,6 +832,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/webapp/recharge.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -750,6 +842,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/regularGold.html">
+=======
+    <entry file="file://$PROJECT_DIR$/webapp/buyCurrentGold.html">
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1089">
           <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
@@ -799,6 +894,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/webapp/bindBankCard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -816,12 +912,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="99" column="16" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="16" />
+=======
+    <entry file="file://$PROJECT_DIR$/static/js/flexible.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1792">
+          <caret line="262" column="20" selection-start-line="262" selection-start-column="20" selection-end-line="262" selection-end-column="20" />
+          <folding>
+            <marker date="1511958554369" expanded="true" signature="1429:1453" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="194" column="1" selection-start-line="194" selection-start-column="1" selection-end-line="194" selection-end-column="1" />
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/buyCurrentGold.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="183">
           <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
           <folding>
@@ -842,6 +963,24 @@
             <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+        <state relative-caret-position="-705">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#2;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> 1128de974cec49580daef294a0724880e03b5735
           </folding>
         </state>
       </provider>
