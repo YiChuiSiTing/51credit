@@ -7,15 +7,15 @@
 
 /*tap*/
 #timeGoalprice{
-    margin-top: 24px;
-    font-size: 12px;
+    margin-top: 0.48rem;
+    font-size: 0.24rem;
     color: #999999;
 }
 #timeGoalprice>div{
-    margin-right: 16px;
+    margin-right: 0.32rem;
 }
 #timeGoalprice span{
-    font-size: 28px;
+    font-size: 0.56rem;
     color: #ff5151;
     font-family: "DIN Alternate";
 }
@@ -23,48 +23,50 @@
 
 #historyTrend p{
     text-align: left;
-    padding-left: 24px;
+    padding-left: 0.48rem;
 
 }
 
 #mainCurrent,#mainHistory{
-    margin: 0px 16px;
+    margin: 0px 0.32rem;
 }
 
 
 .tap{
-    line-height: 44px;
-    height: 44px;
-    font-size: 14px;
+    line-height: 0.88rem;
+    height: 0.88rem;
+    font-size: 0.28rem;
 }
 .tapSelected{
     color: #ff5151;
-    border-bottom: 2px solid #ff5151;
+    border-bottom: 0.04rem solid #ff5151;
 }
 /*end*/
 #messageNotice{
-    margin: 0px 16px 12px 16px;
-    line-height:40px;
+    margin: 0px 0.32rem 0.24rem 0.32rem;
+    line-height:0.8rem;
 }
 #messageNotice img{
-    margin-top: 12px;
-    height:16px;
+    margin-top: 0.38rem;
+    height:0.35rem;
 }
 
 #messageNotice a{
-    font-size: 14px;
-    margin-left: 10px;
+    font-size: 0.28rem;
+    margin-left: 0.2rem;
     color: #333333;
 }
 #messageNotice span{
     color: #ff5151;
-    border-radius: 2px;
-    border:1px solid rgba(255,71,71,0.4)
+    border-radius: 0.04rem;
+    border:1px solid rgba(255,71,71,0.4);
+    font-size: 0.1rem;
+
 }
 /*end*/
 .grey{
     width:100%;
-    height: 12px;
+    height: 0.24rem;
     background: #f3f3f3;
 }
 /*currentGoal*/
@@ -72,30 +74,32 @@
     position: relative;
 }
 .currentGoal{
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 0.4rem 0px;
 }
 .currentGoalItem,.certificateItem{
     /*margin-left: 16px;*/
 }
 .currentGoalItem{
     /*margin-left: 16px;*/
+
 }
 .certificateGoal{
 
-    margin: 0px 0px 20px 16px;
-    padding-bottom: 20px;
+
+    padding-bottom: 0.4rem;
 }
 .currentGoalTitle{
     text-align: center;
-    margin-top: 18px;
-    margin-bottom: 36px;
-    font-size: 18px;
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.36rem;
     font-weight: bold;
     color: #333333;
 }
 .certificateItem{
+    margin: 0px 0px 0.4rem 0.32rem;
     border-bottom: 1px solid #f7f7f7;
-    padding-bottom: 20px;
+    padding-bottom: 0.4rem;
 }
 .certificateItem:last-child{
     padding-bottom: 0px;
@@ -105,18 +109,18 @@
 .historyTab{
     margin: 0 auto;
     background: #f3f3f3;
-    border-radius: 14px;
+    border-radius: 0.28rem;
     color: #333333;
-    width:270px;
+    width:5.4rem;
 
 }
 .historyTab>div{
-    width: 90px;
-    height: 30px;
+    width: 1.8rem;
+    height: 0.6rem;
     text-align: center;
-    border-radius: 14px;
-    line-height: 30px;
-    font-size: 12px;
+    border-radius: 0.28rem;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
 
 }
 
@@ -125,34 +129,33 @@
     color: #fff;
 }
 .historyTitle{
-    font-size: 12px;
+    font-size: 0.24rem;
     color: #666666;
-    margin-top: 24px;
+    margin-top: 0.24rem;
 }
 .historyTitle>div:first-child{
-    margin-left: 16px;
+    margin-left: 0.32rem;
 
 }
 .historyTitle img{
-    width:10px;
-    height: 10px;
-    margin-top: 2.5px;
+    width:0.2rem;
+    height: 0.2rem;
+    margin-top: 0.06rem;
 }
 /*end*/
 
 /*item*/
 .goalItem{
-    margin-top: 40px;
+    margin-top: 0.8rem;
 }
 .goalItemP{
-    font-size: 16px;
+    font-size: 0.32rem;
     font-family: "DIN Alternate";
     color: #ff5151;
-    font-weight: bold;
 
 }
 .goalItemP span{
-    font-size: 24px;
+    font-size: 0.48rem;
     font-weight: bolder;
 }
 .goalItemLeft{
@@ -160,23 +163,23 @@
 
 }
 .goalItemTitle{
-    margin-top: 2px;
+    margin-top: 0.07rem;
 }
 .certificateGoalProject{
-    font-size: 14px;
+    font-size: 0.28rem;
     color: #333333;
 }
 .certificateGoalProject{
 
-    margin-bottom: 8px;
-    margin-top: 20px;
+    margin-bottom: 0.16rem;
+    margin-top: 0.4rem;
 }
 .goalItemRight p{
-    font-size: 12px;
+    font-size: 0.24rem;
     color: #999999;
 }
 .itemDay{
-    font-size: 18px;
+    font-size: 0.36rem;
     color: #333333;
     font-family: "DIN Alternate";
 }
@@ -192,4 +195,7 @@
 }
 .historyTitle>div{
     float: left;
+}
+.goalItemTitle{
+    font-size: 0.24rem;
 }
