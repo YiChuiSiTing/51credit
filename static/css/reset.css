@@ -75,7 +75,8 @@ a:focus {
 }
 
 a:hover, a:active {
-    outline: none
+    outline: none;
+    text-decoration:none
 }
 
 :focus {
@@ -186,7 +187,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     font-size: 0.32rem;
     font-weight: bold;
     width: 100%;
-    border-radius:0rem;
+    border-radius:0.02rem;
     color: #fff;
     border:none;
     background: -webkit-linear-gradient(left top, #ff7373 , #ff5151); /* Safari 5.1 - 6.0 */

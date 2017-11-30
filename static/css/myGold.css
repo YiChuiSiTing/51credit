@@ -32,9 +32,10 @@
 .topBox ul li{
     width: 33.33%;
 }
+
 .bigRed li{
     font-size: 0.28rem;
-    margin-top: 0.24rem;
+    margin-top: 0.18rem;
     color: #333;
 }
 .question{
@@ -67,7 +68,7 @@
 .cashBox div p:first-child{
     font-size: 0.24rem;
     color: #999;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.16rem;
 }
 .cashBox div p:last-child{
     font-size: 0.32rem;
@@ -98,7 +99,7 @@
 }
 .arrow img{
     height: 0.32rem;
-    margin-top: 0.32rem;
+    margin-top: 0.4rem;
 }
 .buttons{
     position: absolute;

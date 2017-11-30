@@ -29,6 +29,7 @@
     margin-left: 0.24rem;
     font-size: 0.32rem;
     color: #333;
+    font-family: "PingFang SC";
 }
 .inputNum input:focus{
     color:#999999;
@@ -92,7 +93,7 @@
 .arrow_box {
     position: relative;
     background: #ff5151;
-    border: 1rem solid #ff5151;
+    border: 0.01rem solid #ff5151;
     color: #fff;
     font-size: 0.2rem;
     padding: 0rem 0.12rem;
