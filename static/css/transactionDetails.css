@@ -32,6 +32,7 @@
 }
 .taps{
     text-align: center;
+    border-top: 0.01rem solid #e6e6e6;
 }
 .taps li{
     height: 0.96rem;
