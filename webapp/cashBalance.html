@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <title>现金余额</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../static/js/flexible.js"></script>
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/transactionDetails.css">
     <style>
+        div,ul{
+            font-size: 0.24rem;
+        }
+
         .showImg{
             position: relative;
-            top:3px
+            top:0.06rem
         }
+        .arrowRight{
+            position: relative;
+            /*right: 0.2rem;*/
+            width: 0.17rem;
+            height: 0.28rem;
+            top:0.35rem;
+
+        }
+        .transactionlist li>div{
+           width: 95%;
+        }
+
     </style>
 </head>
 <body>
@@ -29,9 +46,33 @@
     </div>
     <p class="assets red DIN">123123.2325</p>
 </div>
-<ul class="transactionlist" style="margin-top: 12px">
+<ul class="transactionlist" style="margin-top: 0.24rem">
     <li>
-        <p class="title" style="line-height: 48px;font-family: 'Franklin Gothic Medium'">交易明细</p>
+        <p class="title" style="line-height: 0.96rem;font-family: 'Franklin Gothic Medium'">交易明细</p>
+    </li>
+    <li flex="dir:left main:justify">
+        <div>
+            <div flex="dir:left main:justify">
+                <p class="title">充值</p>
+                <p class="grams red">+ 3000.00</p>
+            </div>
+            <div flex="dir:left main:justify" class="time">
+                <p>2017-01-02 12:12:11</p>
+                <p>成功</p>
+            </div>
+        </div>
+
+        <img src="../static/img/arrowRight.png" alt="" class="arrowRight">
+    </li>
+    <li>
+        <div flex="dir:left main:justify">
+            <p class="title">提现</p>
+            <p class="grams green">-3000.00</p>
+        </div>
+        <div flex="dir:left main:justify" class="time">
+            <p>2017-01-02 12:12:11</p>
+            <p>成功</p>
+        </div>
     </li>
     <li>
         <div flex="dir:left main:justify">
@@ -52,26 +93,7 @@
             <p>2017-01-02 12:12:11</p>
             <p>成功</p>
         </div>
-    </li>
-    <li>
-        <div flex="dir:left main:justify">
-            <p class="title">充值</p>
-            <p class="grams red">+ 3000.00</p>
-        </div>
-        <div flex="dir:left main:justify" class="time">
-            <p>2017-01-02 12:12:11</p>
-            <p>成功</p>
-        </div>
-    </li>
-    <li>
-        <div flex="dir:left main:justify">
-            <p class="title">提现</p>
-            <p class="grams green">-3000.00</p>
-        </div>
-        <div flex="dir:left main:justify" class="time">
-            <p>2017-01-02 12:12:11</p>
-            <p>成功</p>
-        </div>
+
     </li>
     <li>
         <div flex="dir:left main:justify">

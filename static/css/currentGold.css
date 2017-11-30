@@ -1,26 +1,26 @@
 .topBox{
-    height: 197px;
+    /*height: 3.94rem;*/
     background: #fff;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0.8rem;
 }
 .topBox p:first-child{
-    padding-top: 24px;
+    padding-top: 0.48rem;
 }
 .topBox p:nth-child(2){
-    font-size: 36px;
+    font-size: 0.72rem;
     color: #ff5151;
     font-family: 'DIN Alternate';
-    margin-top: 14px;
+    margin-top: 0.2rem;
 }
 .topBox div span{
-    margin-top: 8px;
-    border:1px solid rgba(255,71,71,0.4);
+    margin-top: 0.16rem;
+    border:0.02rem solid rgba(255,71,71,0.4);
     color: #ff5151;
-    width: 60px;
-    height: 20px;
-    font-size: 10px;
-    border-radius: 2px;
+    width: 1.2rem;
+    height: 0.4rem;
+    font-size: 0.2rem;
+    border-radius: 0.04rem;
     display: inline-block;
 }
 .topBox ul li{
@@ -28,34 +28,35 @@
 }
 .bigRed li{
     color: #ff5151;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 0.32rem;
+    margin-top: 0.2rem;
 }
 
 .middleBox{
-    margin-top: 12px;
+    margin-top: 0.24rem;
     background: #fff;
-    height: 100px;
+    /*height: 2rem;*/
     text-align: center;
-    font-size: 12px;
+    font-size: 0.24rem;
     color: #333;
     position: relative;
+
 }
 .middleBox ul:first-child li{
-    margin: 14px 0px;
+    margin: 0.28rem 0rem;
 }
 .circle{
-    height: 10px;
-    width: 10px;
+    height: 0.2rem;
+    width: 0.2rem;
     border-radius: 50%;
-    border:2px solid #ff5151;
+    border:0.04rem solid #ff5151;
     display: inline-block;
 }
 .borderLeft,.borderRight{
     width: 29%;
-    border-top:1px solid rgba(255,71,71,0.2);
+    border-top:0.02rem solid rgba(255,71,71,0.2);
     position: absolute;
-    top:21px;
+    top:0.42rem;
 }
 .borderLeft{
     left: 19%;
@@ -64,70 +65,70 @@
     right:19%;
 }
 .bottomBox{
-    margin-top: 12px;
+    margin-top: 0.24rem;
     background: #fff;
-    padding-bottom: 2px;
+    padding-bottom: 0.04rem;
 }
 .bottomBox>div>p{
-    font-size: 14px;
+    font-size: 0.28rem;
 }
 .tap{
-    line-height: 44px;
-    height: 44px;
+    line-height: 0.88rem;
+    height: 0.88rem;
 }
 .tapSelected{
     color: #ff5151;
-    border-bottom: 2px solid #ff5151;
+    border-bottom: 0.04rem solid #ff5151;
 }
 .rules{
-    margin-top: 30px;
+    margin-top: 0.6rem;
 }
 .rules li{
-    margin-bottom: 30px;
+    margin-bottom: 0.6rem;
 }
 .rules img{
-    width: 24px;
-    height: 24px;
-    margin: 0px 16px;
-    margin-top: -2px;
+    width: 0.48rem;
+    height: 0.48rem;
+    margin: 0rem 0.32rem;
+    margin-top: -0.04rem;
 }
 .rulesTitle{
     color: #333;
-    font-size: 14px;
+    font-size: 0.28rem;
     font-weight: 600;
 }
 .rulesText{
-    margin-top: 10px;
-    font-size: 12px;
+    margin-top: 0.1rem;
+    font-size: 0.24rem;
 }
 .buyerList{
     display: none;
-    margin: 0px 20px;
-    font-size: 13px;
+    margin: 0rem 0.4rem;
+    font-size: 0.26rem;
     color: #666;
-    margin-top: 22px;
-    min-height: 212px;
+    margin-top: 0.44rem;
+    min-height: 4.24rem;
 }
 .buyerList li{
-    margin-bottom: 12px;
+    margin-bottom: 0.24rem;
 }
 .progessBar{
-    width: 292px;
-    height: 2px;
+    width: 5.84rem;
+    height: 0.04rem;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 0.6rem;
     background: #f3f3f3;
 }
 .sold{
     background: #ff5151;
     width: 30%;
-    height: 2px;
+    height: 0.04rem;
 }
 .left,.center,.right{
     width: 20%;
-    border-top:1px solid rgba(255,71,71,0.2);
+    border-top:0.01rem solid rgba(255,71,71,0.2);
     position: absolute;
-    top:21px;
+    top:0.42rem;
 }
 .left{
     left: 15%;
@@ -139,3 +140,24 @@
     left: 65%;
 }
 
+.bigRed{
+    padding-bottom: 0.48rem;
+}
+.lists li p:first-child{
+    width:33%;
+    text-align: left;
+    font-size: 0.26rem;
+}
+.lists li p:nth-child(2){
+    width:50%;
+    text-align: left;
+    font-size: 0.26rem;
+}
+.lists li p:last-child{
+    width:17%;
+    text-align: right;
+    font-size: 0.26rem;
+}
+.dropload-refresh{
+    opacity: 0;
+}

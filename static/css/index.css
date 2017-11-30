@@ -1,15 +1,13 @@
 
 
-#mainCurrent,#mainHistory{
-    margin: 0 auto;
 
-}
 
 /*tap*/
 #timeGoalprice{
-    margin-top: 0.48rem;
+    /*margin-top: 0.48rem;*/
     font-size: 0.24rem;
     color: #999999;
+    z-index: 100;
 }
 #timeGoalprice>div{
     margin-right: 0.32rem;
@@ -28,7 +26,7 @@
 }
 
 #mainCurrent,#mainHistory{
-    margin: 0px 0.32rem;
+    margin: 0rem 0.32rem 0rem 0.32rem;
 }
 
 
@@ -43,11 +41,13 @@
 }
 /*end*/
 #messageNotice{
-    margin: 0px 0.32rem 0.24rem 0.32rem;
+    margin: -0.62rem 0.32rem 0.24rem 0.32rem;
     line-height:0.8rem;
+    /*position: relative;*/
+    /*top:-1rem*/
 }
 #messageNotice img{
-    margin-top: 0.38rem;
+    margin-top: 0.37rem;
     height:0.35rem;
 }
 
@@ -140,7 +140,7 @@
 .historyTitle img{
     width:0.2rem;
     height: 0.2rem;
-    margin-top: 0.06rem;
+    margin-top: 0.07rem;
 }
 /*end*/
 
@@ -198,4 +198,22 @@
 }
 .goalItemTitle{
     font-size: 0.24rem;
+}
+/*#timeGoalprice,.historyTab,.historyTitle{*/
+    /*position: absolute;*/
+/*}*/
+#timeGoalprice{
+    position: absolute;
+    top:1.38rem;
+    z-index: 1000000;
+    right: 0.32rem;
+}
+.his{
+    width: 100%;
+    position: absolute;
+    top:1.38rem;
+    z-index: 10000000;
+}
+.totown{
+    margin-top: 0.5rem;
 }

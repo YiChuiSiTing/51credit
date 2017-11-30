@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>活期黄金</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../static/js/flexible.js"></script>
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/buyCurrentGold.css">
 </head>
@@ -31,18 +32,18 @@
                 <h1 class="logo">预估克重:<span class="grams"></span>克</h1>
             </div>
         </div>
-        <p class="bigRedText red switchGrams" style="position: absolute;right: 16px;">切换成按克重</p>
+        <p class="bigRedText red switchGrams" style="position: absolute;right: 0.32rem;">切换成按克重</p>
     </div>
     <div class="purchaseText" flex="dir:left main:justify">
         <div>
-            <p style="font-size: 16px;color: #333;">现金余额</p>
+            <p style="font-size: 0.32rem;color: #333;">现金余额</p>
             <div class="purchaseMes" flex="dir:Left">
                 <p>可用余额<span class="balanceMoney">20.00</span>元</p>
                 <img src="../static/img/notice.png" alt="" class="balanceMes">
                 <p id="balance" class="balanceMes">余额不足,请先充值</p>
             </div>
         </div>
-        <p class="bigRedText red" style="margin-top: 5px">去充值</p>
+        <p class="bigRedText red" style="margin-top: 0.1rem">去充值</p>
     </div>
 </div>
 <div class="buyerTips">
@@ -59,20 +60,20 @@
         <p>4. 请您先充值再购买</p>
     </div>
 </div>
-<button class="downBotton keepDown" disabled="disabled" style="height: 52px">立即买入</button>
+<button class="downBotton keepDown" disabled="disabled" style="height: 1.04rem">立即买入</button>
 <!--dialog-->
 <div class="fullScreen payMesBox"
      style="display: none"
 >
     <div class="showChangeBox">
-        <p style="font-size: 16px;font-weight: bold;margin-top: 24px">可接受金价最大提示值</p>
-        <p style="font-size: 14px;margin-top: 10px;">范围越大, 购买成功率越高</p>
+        <p style="font-size: 0.32rem;font-weight: bold;margin-top: 0.48rem">可接受金价最大提示值</p>
+        <p style="font-size: 0.28rem;margin-top: 0.2rem;">范围越大, 购买成功率越高</p>
         <div flex="dir:left main:justify">
             <p class="priceMinus"><img src="../static/img/minus.png" alt=""></p>
             <p class="price">0.5</p>
             <p class="pricePlus"><img src="../static/img/plus.png" alt=""></p>
         </div>
-        <p flex="dir:left main:justify" style="border-top: 1px solid #f3f3f3;">
+        <p flex="dir:left main:justify" style="border-top: 0.02rem solid #f3f3f3;">
             <button id="cancle" style="font-weight: inherit">取消</button>
             <button id="enter">确定</button>
         </p>
@@ -85,11 +86,11 @@
         </div>
         <div id="payMes">
             <div class="buyMes">
-                <div flex="dir:left main:justify" style="padding-top: 14px">
+                <div flex="dir:left main:justify" style="padding-top: 0.28rem">
                     <p style="color: #666;">实时金价</p>
                     <p>282.99元/克</p>
                 </div>
-                <div flex="dir:left main:justify" style="margin-top: 20px">
+                <div flex="dir:left main:justify" style="margin-top: 0.4rem">
                     <p style="color: #666">买入克重</p>
                     <p>3.9999克</p>
                 </div>
@@ -104,8 +105,8 @@
 </div>
 <div class="fullScreen alertTips" style="display: none;">
     <div class="alertMes">
-        <p style="color:#333;font-size: 16px;line-height: 3;text-align: center;font-weight: bold">提示</p>
-        <p style="font-size: 14px">亲,金价超过可接受的最大金价,再试一次吧~</p>
+        <p style="color:#333;font-size: 0.32rem;line-height: 3;text-align: center;font-weight: bold">提示</p>
+        <p style="font-size: 0.28rem">亲,金价超过可接受的最大金价,再试一次吧~</p>
         <button class="know">我知道了</button>
     </div>
 </div>

@@ -45,7 +45,7 @@ input, button {
 
 body, th, td, button, input, select, textarea {
     font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
-    font-size: 12px;
+    font-size: 0.24rem;
     color: #999;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
@@ -128,15 +128,15 @@ audio:not([controls]) {
 
 legend {
     width: 100%;
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 40px;
+    margin-bottom: 0.4rem;
+    font-size: 0.42rem;
+    line-height: 0.8rem;
     border: 0;
     border-bottom: 1px solid #e5e5e5
 }
 
 legend small {
-    font-size: 15px;
+    font-size: 0.3rem;
     color: #999
 }
 
@@ -147,8 +147,8 @@ svg:not(:root) {
 fieldset {
     border-width: 0;
     padding: 0.35em 0.625em 0.75em;
-    margin: 0 2px;
-    border: 1px solid #c0c0c0
+    margin: 0 2rem;
+    border: 1rem solid #c0c0c0
 }
 
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
@@ -175,18 +175,18 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     color: #7ed321;
 }
 .redBorder{
-    border:1px solid rgba(255,71,71,0.4);
-    border-radius: 2px;
+    border:0.01rem solid rgba(255,71,71,0.4);
+    border-radius: 0.04rem;
     color: #ff5151;
-    padding:0px 6px;
+    padding:0rem 0.12rem;
     font-family:"DIN Alternate";
 }
 .downBotton{
-    height: 44px;
-    font-size: 16px;
+    height: 0.88rem;
+    font-size: 0.32rem;
     font-weight: bold;
     width: 100%;
-    border-radius:0px;
+    border-radius:0rem;
     color: #fff;
     border:none;
     background: -webkit-linear-gradient(left top, #ff7373 , #ff5151); /* Safari 5.1 - 6.0 */
@@ -198,29 +198,29 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     background: #fff;
     width: 74%;
     margin-left: 13%;
-    border-radius: 2px;
+    border-radius: 0.04rem;
     margin-top: 38%;
     color: #666;
-    padding:0px 24px 72px 24px;
+    padding:0rem 0.48rem 1.44rem 0.48rem;
     position: relative;
-    font-size: 14px;
+    font-size: 0.28rem;
     color: #333;
 }
 .know{
-    font-size: 16px;
+    font-size: 0.32rem;
     color: #1a97ff;
     position: absolute;
     border:none;
-    border-top:1px solid #f3f3f3;
+    border-top:0.01rem solid #f3f3f3;
     width: 100%;
-    bottom:0px;
-    left:0px;
-    height: 48px;
-    border-radius: 0px;
+    bottom:0rem;
+    left:0rem;
+    height: 0.96rem;
+    border-radius: 0rem;
     background: #fff;
     font-weight: bold;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0.08rem;
+    border-bottom-right-radius: 0.08rem;
     font-family: "Franklin Gothic Medium";
 }
 /*titlebar*/
@@ -230,7 +230,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 }
 #titleBar{
     position: fixed;
-    top:0px;
+    top:0rem;
     width: 100%;
     background: #fff;
     height: 0.88rem;
@@ -238,15 +238,15 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     z-index: 10000;
 }
 #back{
-    margin-left: 16px;
-    margin-top: 12px;
-    height:16px;
+    margin-left: 0.32rem;
+    margin-top: 0.24rem;
+    height:0.32rem;
 }
 #titleBarName p{
     text-align: center;
     font-size: 0.34rem;
     font-family: "PingFang SC";
-    line-height: 0.8rem;
+    line-height: 0.88rem;
     color: #333;
     font-weight: bold;
 }
@@ -289,10 +289,10 @@ Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高
 /*全屏显示*/
 .fullScreen{
     position:fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
     background: rgba(0,0,0,0.3);
     z-index: 100000;
     /*display: none;*/
@@ -306,10 +306,10 @@ Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高
 }
 /*div模仿input*/
 .underLineInput{
-    border-bottom: 1px solid #b2b2b2;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 20px;
+    border-bottom: 1rem solid #b2b2b2;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding-left: 0.4rem;
 }
 
 /*--end--*/
@@ -628,12 +628,12 @@ input{
 }
 .priceMinus img{
     position: relative;
-    top:10px;
-    width: 12px;
+    top:0.2rem;
+    width: 0.24rem;
 
 }
 .pricePlus img{
     position: relative;
-    top:5px;
-    width: 12px;
+    top:0.1rem;
+    width: 0.24rem;
 }

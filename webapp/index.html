@@ -7,6 +7,13 @@
     <script src="../static/js/flexible.js"></script>
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/index.css">
+    <style>
+        .current{
+            margin-top: 0.48rem;
+        }
+    </style>
+
+
 </head>
 
 <body style="background: #fff">
@@ -31,30 +38,33 @@
         <p id="currentBtn" class="tap tapSelected" style="margin-right: 0.48rem">实时金价</p >
         <p id="historyBtn" class="tap " style="margin-left: 0.48rem">历史走势</p >
     </div>
-    <div style="margin-top: 0.48rem" class="current ">
+    <div style="" class="current ">
 
         <div id="timeGoalprice" flex="dir:right">
             <div>
                 <span class="rgpPrice">277.95</span>元/克
             </div>
         </div>
-        <div class="historyTab hide cl">
-            <div class="historyTabSelect">近一月</div>
-            <div>近三月</div>
-            <div>近一年</div>
+        <div class="his">
+            <div class="historyTab hide cl">
+                <div class="historyTabSelect">近一月</div>
+                <div>近三月</div>
+                <div>近一年</div>
+            </div>
+            <div class="historyTitle hide cl" >
+                <div class=""><img src="../static/img/roundPoint.png" alt=""></div>
+                <div class="">上海黄金交易所Au9999收盘价</div>
+            </div>
         </div>
-        <div class="historyTitle hide cl" >
-            <div class=""><img src="../static/img/roundPoint.png" alt=""></div>
-            <div class="">上海黄金交易所Au9999收盘价</div>
-        </div>
-        <div id="mainCurrent" style="height:6rem;"></div>
+
+        <div id="mainCurrent" class="totown" style="height:6rem;"></div>
 
 
     </div>
-    <div style="margin-top:0.48rem" class="history ">
+    <!--<div style="margin-top:0.48rem" class="history ">-->
 
 
-    </div>
+    <!--</div>-->
 
 
 </div>
@@ -63,7 +73,7 @@
         <img src="../static/img/trumpet.png" alt="">
     </div>
     <div>
-        <a href="./informationDetail.html">黄金操作手册,新手必看</a><span style="padding: 0.06rem 0.1rem;margin-left: 0.12rem">最新版</span>
+        <a href="./informationDetail.html">黄金操作手册,新手必看</a><span style="padding: 0.01rem 0.1rem 0.05rem 0.1rem;margin-left: 0.12rem">最新版</span>
     </div>
 </div>
 <div class="grey">
@@ -131,6 +141,7 @@
 
 <script src="../static/js/echarts.common.min.js"></script>
 <script src="../static/js/echartObject.js"></script>
+<!--<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>-->
 <script src="../static/js/util.js"></script>
 <script src="../static/js/index.js"></script>
 <script>

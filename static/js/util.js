@@ -23,7 +23,7 @@ var util = {
         },1000)
     },
     getPrice:function () {
-        return Math.floor(Math.random()*100)+300;
+        return Math.floor(Math.random()*100)+300.99;
     },
     
     
