@@ -96,6 +96,11 @@
 <script src="../static/js/dropload.min.js"></script>
 <script>
     //showTaps
+    $(".fullScreen").click(function (e) {
+        e.preventDefault();
+        $(".fullScreen").hide();
+
+    })
     $("#titleBarName").click(function () {
         $(this).children("img").removeClass('rotate')
         $(".fullScreen").show();

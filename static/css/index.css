@@ -60,7 +60,7 @@
     color: #ff5151;
     border-radius: 0.04rem;
     border:1px solid rgba(255,71,71,0.4);
-    font-size: 0.1rem;
+    font-size: 0.2rem;
 
 }
 /*end*/
@@ -205,14 +205,14 @@
 #timeGoalprice{
     position: absolute;
     top:1.38rem;
-    z-index: 1000000;
+    z-index: 1000;
     right: 0.32rem;
 }
 .his{
     width: 100%;
     position: absolute;
     top:1.38rem;
-    z-index: 10000000;
+    z-index: 1000;
 }
 .totown{
     margin-top: 0.5rem;

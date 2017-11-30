@@ -22,6 +22,7 @@
     font-size: 0.2rem;
     border-radius: 0.04rem;
     display: inline-block;
+    line-height: 0.4rem;
 }
 .topBox ul li{
     width: 33.33%;
@@ -82,6 +83,7 @@
 }
 .rules{
     margin-top: 0.6rem;
+    margin-bottom: 1.04rem;
 }
 .rules li{
     margin-bottom: 0.6rem;

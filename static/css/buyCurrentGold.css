@@ -66,12 +66,13 @@
 }
 .agreement p{
     margin-left: 0.12rem;
+    font-size: 0.24rem;
 }
 .tipsText{
     margin-top: 0.44rem;
     font-size: 0.24rem;
-    line-height: 1.8;
-    letter-spacing: 0.02rem;
+    /*line-height: 1.8;*/
+    letter-spacing: 0.01rem;
 }
 .keepDown{
     position: absolute;
@@ -166,7 +167,7 @@
 }
 .payBoxTitle{
     height: 0.96rem;
-    border-bottom: 1rem solid #f3f3f3;
+    border-bottom: 0.01rem solid #f3f3f3;
     position: relative;
 }
 .payBoxTitle img{
@@ -187,7 +188,7 @@
 }
 .buyMes{
     height: 1.72rem;
-    border-bottom: 1rem solid #f3f3f3;
+    border-bottom: 0.02rem solid #f3f3f3;
     font-size: 0.28rem;
     color: #333;
 }
@@ -197,7 +198,7 @@
     margin-top: 0.8rem;
 }
 .surePay{
-    border-radius: 0.08rem;
+    border-radius: 0.02rem;
     border:none;
     margin-top: 2.94rem;
 }
