@@ -117,7 +117,7 @@ var optionCurrent = {
                 show:false,
                 label: {
                     formatter: function (params) {
-                        return '降水量  ' + params.value
+                        return '金价' + params.value
                             + (params.seriesData.length ? '：' + params.seriesData[0].data.toString().substr(0,5) : '');
                     }
                 }
@@ -224,6 +224,7 @@ var optionHistoryOneMonth = {
             return [pt[0], '10%'];
         }
     },
+
     title: {
         left: 'center',
         text: '',
@@ -239,28 +240,100 @@ var optionHistoryOneMonth = {
         // }
     },
     legend:{
-        legend:'vertical'
+        legend:'vertical',
+        itemGap:75,
+        selectedMode:false,
+        top:0,
+        left:0,
+        selectedMode:false
+    },
+    grid:{
+        // show:true,
+        borderColor:'#ff5151',
+        x:36,
+        x2:6
     },
     // xAxis: {
     //     type: 'category',
-    //     name:'近一月成交价',
-    //     nameLocation:'center',
-    //     nameGap:8,
     //     boundaryGap: false,
-    //     data: dateHistory,
-    //
+    //     data: dateCurrent
     // },
+    xAxis: [
+        {
+            type: 'category',
+            color:'#333',
+            axisTick: {
+                alignWithLabel: true,
+                inside:true,
+                lineStyle:{
+                    width:0,
+                    color:'#333'
+                },
+                length:4
 
+            },
+            axisLabel:{
+                margin:10,
+                color:'#333',
+                align:'center',
+                color:'#999999',
+                fontSize:'0.20rem',
+                width:10
+            },
+            boundaryGap: ['0%', '20%'],
+            nameGap:100,
+            axisLine: {
+                show:false,
+                onZero: false,
+                lineStyle: {
+                    color: '#ff5151'
+                },
+                width:1
+            },
+            areaStyle:{
+                lineStyle:{
+                    color:['#ff5151']
+                }
+
+            },
+            splitNumber:10,
+            triggerEvent:false,
+            axisPointer: {
+                triggerTooltip:false,
+                show:false,
+                label: {
+                    formatter: function (params) {
+                        return '降水量  ' + params.value
+                            + (params.seriesData.length ? '：' + params.seriesData[0].data.toString().substr(0,5) : '');
+                    }
+                }
+            },
+
+
+            data: dateCurrent
+        }
+    ],
     yAxis: {
         type: 'value',
-        min:'274.0',
-        max:'276.0',
         boundaryGap: [0, '100%'],
         axisLine:{
             lineStyle:{
                 opacity:0
             }
-        }
+        },
+        axisLabel:{
+            margin:10,
+            color:'#999999',
+            fontSize:'0.24rem'
+        },
+        axisTick: {
+            alignWithLabel: true,
+            inside:true,
+            lineStyle:{
+                width:0
+            }
+        },
+        triggerEvent:false
 
     },
     dataZoom: [{
@@ -276,10 +349,10 @@ var optionHistoryOneMonth = {
         handleSize: '80%',
         handleStyle: {
             color: '#fff',
-            shadowBlur: 3,
-            shadowColor: 'rgba(0, 0, 0, 0.6)',
-            shadowOffsetX: 2,
-            shadowOffsetY: 2
+            shadowBlur: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.2)',
+            shadowOffsetX: 0,
+            shadowOffsetY: 0
         }
     }],
     series: [
@@ -289,14 +362,33 @@ var optionHistoryOneMonth = {
             smooth:true,
             symbol: 'none',
             sampling: 'average',
+            clickable:false,
             itemStyle: {
                 normal: {
-                    color: '#ff5151'
+                    color: '#ff5151',
+                    borderWidth:1
                 }
             },
-            data: dataHistory
+
+            lineStyle:{
+                normal:{
+                    width:1
+                }
+
+            },
+            markLine:{
+                silent:true
+            },
+            silent:true,
+            data: dataCurrent
+            // data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         }
-    ]
+    ],
+    geo:{
+        roam:false
+    },
+    calculable:false
+
 };
 // 使用刚指定的配置项和数据显示图表。
 // myChartCurrent.setOption(option);
