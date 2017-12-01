@@ -63,7 +63,9 @@ var optionCurrent = {
     },
     grid:{
         // show:true,
-        borderColor:'##ff5151'
+        borderColor:'#ff5151',
+        x:36,
+        x2:6
     },
     // xAxis: {
     //     type: 'category',
@@ -80,13 +82,14 @@ var optionCurrent = {
                 lineStyle:{
                     width:0,
                     color:'#333'
-                }
+                },
+                length:4
 
             },
             axisLabel:{
                 margin:10,
                 color:'#333',
-                align:'left',
+                align:'center',
                 color:'#999999',
                 fontSize:'0.24rem'
             },
@@ -126,7 +129,7 @@ var optionCurrent = {
             }
         },
         axisLabel:{
-            margin:12,
+            margin:10,
             color:'#999999',
             fontSize:'0.2rem'
         },

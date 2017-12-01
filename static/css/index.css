@@ -8,7 +8,7 @@
     font-size: 0.24rem;
     color: #999999;
     position: absolute;
-    top:1.08rem;
+    top:1.16rem;
     z-index: 1000;
     right: 0.32rem;
 
@@ -63,7 +63,7 @@
 
 #messageNotice a{
     font-size: 0.28rem;
-    margin-left: 0.2rem;
+
     color: #333333;
 }
 #messageNotice span{
