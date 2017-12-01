@@ -83,13 +83,13 @@
 }
 .rules{
     margin-top: 0.6rem;
-    margin-bottom: 1.04rem;
+    margin-bottom: 1.64rem;
 }
 .rules li{
     margin-bottom: 0.6rem;
 }
 .rules img{
-    width: 0.48rem;
+    /*width: 0.48rem;*/
     height: 0.48rem;
     margin: 0rem 0.32rem;
     margin-top: -0.04rem;

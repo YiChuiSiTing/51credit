@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>现金余额</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <script src="../static/js/flexible.js"></script>
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/transactionDetails.css">
@@ -25,9 +27,13 @@
 
         }
         .transactionlist li>div{
-           width: 95%;
+           width: 100%;
         }
 
+        .downBotton{
+            border-radius: 0rem;
+            height: 1.04rem;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +47,7 @@
 </div>
 <div class="topBox">
     <div flex="dir:left main:center">
-        <p>黄金总资产(克)</p>
+        <p>我的现金(元)</p>
         <img src="../static/img/show.png" alt="" class="showImg">
     </div>
     <p class="assets red DIN">123123.2325</p>
@@ -62,7 +68,7 @@
             </div>
         </div>
 
-        <img src="../static/img/arrowRight.png" alt="" class="arrowRight">
+
     </li>
     <li>
         <div flex="dir:left main:justify">
