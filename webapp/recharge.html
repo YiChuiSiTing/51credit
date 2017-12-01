@@ -17,6 +17,10 @@
 
             border-radius: 0.04rem;
         }
+        .inputMes p{
+            font-size: 0.28rem;
+            color: #999999;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +49,7 @@
 </div>
 <div class="inputNum">
     <span style="color: #333333;font-family: 'PingFang SC';font-weight: bold">¥</span>
-    <input type="number" placeholder="请输入充值金额" class="DIN" style="color: #999999">
+    <input type="number" placeholder="请输入充值金额" class="DIN" style="color: #333">
 </div>
 <div class="keepDown">
     <button class="downBotton" disabled="disabled">确定充值</button>
@@ -55,14 +59,14 @@
     <div class="verificationCode">
         <div flex="dir:left main:justify" class="codeTitle">
             <img src="../static/img/close.png" alt="" class="close takeCode">
-            <p style="font-size: 0.32rem;">输入短信验证码</p>
+            <p style="font-size: 0.32rem; ">输入短信验证码</p>
             <p style="font-size: 0.28rem;">确认</p>
         </div>
         <div class="inputMes">
             <p>已发送至手机号185****2889,<span class="red fondHelp">收不到验证码?</span></p>
             <div class="codeInput" flex="dir:left main:justify">
-                <input type="number" placeholder="请输入短信验证码">
-                <p class="red">获取验证码</p>
+                <input type="number" placeholder="请输入短信验证码" style="color: #333">
+                <p class="red getCode">获取验证码</p>
             </div>
         </div>
     </div>
@@ -96,14 +100,51 @@
     $(".fondHelp").click(function () {
         $(".codeFail").show();
         $(".verificationCode").hide();
+
     })
     $(".takeCode").click(function () {
         $(".fullScreen").hide();
+
     })
     $(".fondCode").click(function () {
         $(".codeFail").hide();
         $(".verificationCode").show();
     })
+    var clock = '';
+    var nums = 3;
+    var btn;
+    $('.getCode').on('click',function () {
+        sendCode($('.getCode'))
+    })
+    function sendCode(thisBtn)
+    {
+
+        btn = thisBtn;
+        btn.css({
+            color:'#999'
+        })
+        btn.text(nums+'s');
+
+        clock = setInterval(doLoop, 1000); //一秒执行一次
+    }
+    function doLoop()
+    {
+
+        nums--;
+        if(nums > 0){
+            btn.attr('disabled','disabled');//将按钮置为不可点击
+
+            btn.text(nums+'s');
+        }else{
+            clearInterval(clock); //清除js定时器
+            btn.removeAttr('disabled');
+            btn.text('获取验证码');
+            btn.css({
+                color:'#ff5151'
+            })
+            nums = 3; //重置时间
+        }
+    }
 </script>
 </body>
 </html>

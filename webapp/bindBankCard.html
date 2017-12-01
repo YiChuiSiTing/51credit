@@ -85,21 +85,30 @@
     })
     function sendCode(thisBtn)
     {
+
         btn = thisBtn;
+        btn.css({
+            color:'#999'
+        })
         btn.text(nums+'s');
 
         clock = setInterval(doLoop, 1000); //一秒执行一次
     }
     function doLoop()
     {
+
         nums--;
         if(nums > 0){
             btn.attr('disabled','disabled');//将按钮置为不可点击
+
             btn.text(nums+'s');
         }else{
             clearInterval(clock); //清除js定时器
             btn.removeAttr('disabled');
             btn.text('获取验证码');
+            btn.css({
+                color:'#ff5151'
+            })
             nums = 3; //重置时间
         }
     }

@@ -57,7 +57,7 @@
     line-height: 0.96rem;
     padding: 0rem 0.32rem;
     color: #333;
-    border-bottom: 1rem solid #f3f3f3;
+    border-bottom: 0.01rem solid #f3f3f3;
     
 }
 .close{
@@ -73,7 +73,7 @@
     height: 0.96rem;
     line-height: 0.96rem;
     margin-top: 0.4rem;
-    border-bottom: 1rem solid #f3f3f3;
+    border-bottom: 0.01rem solid #f3f3f3;
     margin-bottom: 1.28rem;
 }
 .codeInput input{

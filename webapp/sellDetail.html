@@ -13,7 +13,7 @@
             font-size: 0.24rem;
         }
         .topBox{
-            padding:0.32rem;
+            padding:0.32rem 0.32rem 0.28rem 0.32rem;
             margin-top: 0.8rem;
             background: #fff;
         }
@@ -24,10 +24,16 @@
         }
         .DIN{
             font-size: 0.6rem;
-            margin-top: 0.24rem;
+            margin-top: 0.08rem;
         }
         li{
             padding-bottom: 0.32rem;
+        }
+        .orderListTitle{
+            color: #999999;
+        }
+        .orderListContent{
+            color: #666666;
         }
     </style>
 </head>
@@ -49,24 +55,24 @@
 </div>
 <ul class="orderList" style="margin-top: 0.24rem;">
     <li flex="dir:left main:justify">
-        <p>订单编号</p>
-        <p>12312312312312312312312</p>
+        <p class="orderListTitle">订单编号</p>
+        <p class="orderListContent">12312312312312312312312</p>
     </li>
     <li flex="dir:left main:justify">
-        <p>成交金价</p>
-        <p>234.23 / 克</p>
+        <p class="orderListTitle">成交金价</p>
+        <p class="orderListContent">234.23 / 克</p>
     </li>
     <li flex="dir:left main:justify">
-        <p>成交金额</p>
-        <p>2342.32元</p>
+        <p class="orderListTitle">成交金额</p>
+        <p class="orderListContent">2342.32元</p>
     </li>
     <li flex="dir:left main:justify">
-        <p>手续费</p>
-        <p>2342.32元</p>
+        <p class="orderListTitle">手续费</p>
+        <p class="orderListContent">2342.32元</p>
     </li>
     <li flex="dir:left main:justify">
-        <p>交易日期</p>
-        <p>2017-10-19 12:23:23</p>
+        <p class="orderListTitle">交易日期</p>
+        <p class="orderListContent">2017-10-19 12:23:23</p>
     </li>
 </ul>
 <script src="../static/js/jquery-3.2.1.min.js"></script>

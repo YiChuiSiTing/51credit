@@ -131,8 +131,11 @@
         buyCurrentGold.minus()
     })
     $('.numInput').on('keyup',function () {
-        var length=$(this).length;
-        console.log(length)
+        var val=$(this).val();
+        if(val==0){
+            $(".balanceMes").hide()
+        }
+
     })
 </script>
 </body>

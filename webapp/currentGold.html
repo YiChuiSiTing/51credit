@@ -18,7 +18,7 @@
             position: fixed;
             bottom: 0;
             height: 1.04rem;
-            border-radius: 0rem;
+            border-radius: ;
         }
         .font32{
             font-size: 0.32rem;
@@ -37,7 +37,7 @@
         <img src="../static/img/back.png" alt="" id="back" >
     </div>
     <div id="titleBarName">
-        <p>黄金买入</p>
+        <p>活期黄金</p>
     </div>
     <div id="titleBarFunction">
         <p>我的黄金</p>
@@ -86,7 +86,7 @@
             <p>到账</p>
         </li>
     </ul>
-    <ul flex="dir:left box:mean" style="color: #999;margin-top: 0.2rem;padding-bottom: 0.3rem">
+    <ul flex="dir:left box:mean" style="color: #999;margin-top: 0.04rem;padding-bottom: 0.24rem">
         <li>
             <p>2017-10-03</p>
         </li>
@@ -244,7 +244,7 @@
             $(".buyerNum").removeClass('tapSelected');
             $(".rules").show();
             $(".buyerList").hide();
-            $('.downBotton').removeClass('downBottonfix')
+            $('.downBotton').addClass('downBottonfix')
         })
         $(".buyerNum").click(function () {
             $(this).addClass('tapSelected');

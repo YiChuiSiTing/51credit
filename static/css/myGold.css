@@ -35,7 +35,7 @@
 
 .bigRed li{
     font-size: 0.28rem;
-    margin-top: 0.18rem;
+    margin-top: 0.12rem;
     color: #333;
 }
 .question{
@@ -60,21 +60,21 @@
 .middleBox div p:first-child{
     font-size: 0.24rem;
     color: #999;
-    margin-bottom: 0.16rem;
+    margin-bottom: 0.1rem;
 }
 .middleBox div:last-child p{
     margin-left: 0.32rem;
 }
 .cashBox div p:first-child{
     font-size: 0.24rem;
-    color: #999;
-    margin-bottom: 0.16rem;
+    color: #333333;
+    margin-bottom: 0.10rem;
 }
 .cashBox div p:last-child{
     font-size: 0.32rem;
-    color: #999;
+    color: #333333;
     /*margin-bottom: 12rem;*/
-    color: #000;
+
 }
 .borderLeft{
     left: 19%;
@@ -99,7 +99,7 @@
 }
 .arrow img{
     height: 0.32rem;
-    margin-top: 0.4rem;
+    margin-top: 0.35rem;
 }
 .buttons{
     position: absolute;

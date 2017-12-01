@@ -91,7 +91,8 @@ var optionCurrent = {
                 color:'#333',
                 align:'center',
                 color:'#999999',
-                fontSize:'0.24rem'
+                fontSize:'0.20rem',
+                width:10
             },
             boundaryGap: ['0%', '20%'],
             nameGap:100,
@@ -102,6 +103,12 @@ var optionCurrent = {
                     color: '#ff5151'
                 },
                 width:1
+            },
+            areaStyle:{
+                lineStyle:{
+                    color:['#ff5151']
+                }
+
             },
             splitNumber:10,
             triggerEvent:false,
@@ -131,7 +138,7 @@ var optionCurrent = {
         axisLabel:{
             margin:10,
             color:'#999999',
-            fontSize:'0.2rem'
+            fontSize:'0.24rem'
         },
         axisTick: {
             alignWithLabel: true,
