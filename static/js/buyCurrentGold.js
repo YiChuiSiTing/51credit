@@ -39,8 +39,11 @@ var buyCurrentGold = {
                 $(".RMB").show();
                 $(this).css("color","#333");
                 $(".arrow_box").show();
+                var len = ($(this).val() + "").length
+                $(".arrow_box").css("right",3.8 - len * 0.15 + "rem")
                 if($('.switchGrams').html() == '切换成按克重'){
-                    that.takeGrams($(".numInput").val())
+                    that.takeGrams($(".numInput").val());
+                     $(".RMB").show()
                 }else{
                     that.takeMoney($(".numInput").val());
                     $(".RMB").hide()
@@ -51,7 +54,8 @@ var buyCurrentGold = {
     takeGrams:function (val) {
         var rgpPrice = parseFloat($(".rgpPrice").text());
         var addPrice = parseFloat($(".addPrice").text());
-        var grams = val / (rgpPrice + rgpPrice)
+        var grams = val / (rgpPrice + addPrice)
+        $(".logo").html('<h1 class="logo">预估克重:<span class="grams"></span>克</h1>');
         $(".grams").text(grams.toFixed(2));
         this.balanceTips(val)
     },
@@ -66,20 +70,21 @@ var buyCurrentGold = {
                 $(".numInput").attr("placeholder","请输入购买克数")
             }else{
                 $(this).text('切换成按克重')
-                $(".numInput").attr("placeholder","请输入购买金额")
+                $(".numInput").attr("placeholder","请输入购买金额");
             }
         })
     },
     takeMoney:function (val) {
         var rgpPrice = parseFloat($(".rgpPrice").text());
         var addPrice = parseFloat($(".addPrice").text());
-        var money = val * rgpPrice + val * rgpPrice;
+        var money = val * (rgpPrice + addPrice)
         $(".logo").html('预估金额<span class="titleMoney">' + money+ '</span>元');
         this.balanceTips(val)
     },
     balanceTips:function (val) {
         var balanceMoney = parseFloat($(".balanceMoney").text());
         var titleMoney = parseFloat($(".titleMoney").text());
+        console.log(val,balanceMoney,titleMoney)
         if(val > balanceMoney || titleMoney > balanceMoney || val == 0){
             $(".balanceMes").show()
             $(".keepDown").attr("disabled","disabled").css("opacity",'0.45')

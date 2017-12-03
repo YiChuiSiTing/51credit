@@ -12,16 +12,10 @@ var dataCurrent = [];
 var dateHistory = [];
 
 var dataHistory = [];
-<<<<<<< HEAD
-for (var i = 1; i < 70; i++) {
-    var now = new Date();
-    dateCurrent.push([now.getHours(), now.getMinutes()].join(':'));
-=======
 for (var i = 1; i < 200; i++) {
     var now = new Date(base += oneDay);
     // dateCurrent.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
     dateCurrent.push("00:10")
->>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
     dataCurrent.push((Math.random()) * 20);
 }
 console.log(dataCurrent)
@@ -61,9 +55,6 @@ var optionCurrent = {
     },
     legend:{
         legend:'vertical',
-<<<<<<< HEAD
-        itemGap:75
-=======
         itemGap:75,
         selectedMode:false,
         top:0,
@@ -75,7 +66,6 @@ var optionCurrent = {
         borderColor:'#ff5151',
         x:36,
         x2:6
->>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
     },
     // xAxis: {
     //     type: 'category',
@@ -132,28 +122,19 @@ var optionCurrent = {
                     }
                 }
             },
-<<<<<<< HEAD
-            data: dateCurrent,
-            silent:true
-=======
 
 
             data: dateCurrent
->>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
         }
     ],
     yAxis: {
         type: 'value',
-        // boundaryGap: [0, '100%'],
+        boundaryGap: [0, '100%'],
         axisLine:{
             lineStyle:{
                 opacity:0
             }
         },
-<<<<<<< HEAD
-        // tickLength:1,
-        splitNumber:4
-=======
         axisLabel:{
             margin:10,
             color:'#999999',
@@ -168,13 +149,12 @@ var optionCurrent = {
         },
         triggerEvent:false
 
->>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
     },
     dataZoom: [{
         type: 'inside',
         show:false,
-        // start: 0,
-        // end: 10
+        start: 0,
+        end: 10
     }, {
         show:false,
         start: 0,
