@@ -12,9 +12,9 @@ var dataCurrent = [Math.random() * 300];
 var dateHistory = [];
 
 var dataHistory = [];
-for (var i = 1; i < 200; i++) {
-    var now = new Date(base += oneDay);
-    dateCurrent.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
+for (var i = 1; i < 70; i++) {
+    var now = new Date();
+    dateCurrent.push([now.getHours(), now.getMinutes()].join(':'));
     dataCurrent.push((Math.random()) * 20);
 }
 console.log(dataCurrent)
@@ -52,7 +52,8 @@ var optionCurrent = {
         // }
     },
     legend:{
-        legend:'vertical'
+        legend:'vertical',
+        itemGap:75
     },
     // xAxis: {
     //     type: 'category',
@@ -79,25 +80,26 @@ var optionCurrent = {
                     }
                 }
             },
-            data: ["01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00"]
+            data: dateCurrent,
+            silent:true
         }
     ],
     yAxis: {
         type: 'value',
-        boundaryGap: [0, '100%'],
+        // boundaryGap: [0, '100%'],
         axisLine:{
             lineStyle:{
                 opacity:0
             }
         },
-        tickLength:1
-
+        // tickLength:1,
+        splitNumber:4
     },
     dataZoom: [{
         type: 'inside',
         show:false,
-        start: 0,
-        end: 10
+        // start: 0,
+        // end: 10
     }, {
         show:false,
         start: 0,
