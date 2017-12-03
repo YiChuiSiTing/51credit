@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <title>提现</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="../static/js/flexible.js"></script>
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/recharge.css">
+    <style>
+        div{
+            font-size: 0.24rem;
+            font-family: "PingFang SC";
+        }
+        .downBotton{
+
+            border-radius: 0.04rem;
+        }
+        ::-webkit-input-placeholder{
+            font-family: "Franklin Gothic Medium";
+        }
+
+        .inputNum input{
+            font-family: "DIN Alternate";
+        }
+    </style>
 </head>
 <body>
 <div id="titleBar" flex="dir:left">
@@ -17,15 +37,15 @@
     </div>
 </div>
 <div class="topBox" flex="fir:left">
-    <img src="../static/img/gdBank.png" alt="" style="width: 32px">
-    <div style="margin-left: 16px">
+    <img src="../static/img/gdBank.png" alt="" style="width: 0.64rem">
+    <div style="margin-left: 0.32rem">
         <p class="title">光大银行(尾号4404)</p>
         <p>可转出至该卡余额: <span class="red">234.23元</span></p>
     </div>
 </div>
 <div class="inputNum">
-    <span style="color: #333333">¥</span>
-    <input type="number" placeholder="请输入提现金额" class="DIN" style="width: 70%">
+    <span style="color: #333333;font-family: 'PingFang SC';font-weight: bold">¥</span>
+    <input type="number" placeholder="请输入提现金额" class="" style="width: 70%">
     <p class="red" style="float: right;">全部提现</p>
     <div class="preview">
         <span class="arrow_box">
@@ -40,8 +60,8 @@
     <div class="verificationCode">
         <div flex="dir:left main:justify" class="codeTitle">
             <img src="../static/img/close.png" alt="" class="close takeCode">
-            <p style="font-size: 16px;">输入短信验证码</p>
-            <p style="font-size: 14px;">确认</p>
+            <p style="font-size: 0.32rem;">输入短信验证码</p>
+            <p style="font-size: 0.28rem;">确认</p>
         </div>
         <div class="inputMes">
             <p>已发送至手机号185****2889,<span class="red fondHelp">收不到验证码?</span></p>
@@ -54,14 +74,14 @@
     <div class="codeFail">
         <div flex="dir:left main:justify" class="codeTitle">
             <img src="../static/img/close.png" alt="" class="close fondCode">
-            <p style="font-size: 16px;">收不到验证码</p>
-            <p style="font-size: 14px;"></p>
+            <p style="font-size: 0.32rem;">收不到验证码</p>
+            <p style="font-size: 0.28rem;"></p>
         </div>
         <div class="inputMes">
             <p>1.请检查短信是否被手机安全中心拦截;</p>
             <p>2.如银行预留手机号变更,请重新绑定;</p>
             <p>3.获取更多帮助,请拨打客服电话</p>
-            <p style="color:#333;font-size: 16px;margin-left: 10px;font-family: 'Semibold'">400-650-6932</p>
+            <p style="color:#333;font-size: 0.32rem;margin-left: 0.2rem;font-family: 'Semibold';color: #333333">400-650-6932</p>
         </div>
     </div>
 </div>

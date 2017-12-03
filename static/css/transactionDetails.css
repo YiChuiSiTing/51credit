@@ -1,5 +1,5 @@
 #titleBarName{
-    padding-left: 18px;
+    padding-left: 0.36rem;
 }
 .rotate{
     transform:rotate(180deg);
@@ -10,36 +10,37 @@
 }
 .transactionlist,.taps{
     background: #fff;
-    margin-top: 40px;
-    margin-bottom: 58px;
+    margin-top: 0.8rem;
+    margin-bottom: 1.16rem;
 }
 .transactionlist li{
-    margin: 0px 16px;
-    padding:10px 0px;
-    border-bottom: 1px solid #e6e6e6;
-    height: 64px;
+    margin: 0rem 0.32rem;
+    padding:0.2rem 0rem;
+    border-bottom: 0.01rem solid #e6e6e6;
+    height: 1.28rem;
 }
 .transactionlist li:last-child{
     border:none;
 }
 .title{
-    font-size: 16px;
+    font-size: 0.32rem;
     color: #333;
-    margin-bottom: 4px;
+    margin-bottom: 0.08rem;
 }
 .green,.red{
-    font-size: 14px;
+    font-size: 0.28rem;
 }
 .taps{
     text-align: center;
+    border-top: 0.01rem solid #e6e6e6;
 }
 .taps li{
-    height: 48px;
-    line-height: 48px;
+    height: 0.96rem;
+    line-height: 0.96rem;
     text-align: center;
-    margin: 0px 16px;
-    border-bottom: 1px solid #e6e6e6;
-    font-size: 14px;
+    margin: 0rem 0.32rem;
+    border-bottom: 0.01rem solid #e6e6e6;
+    font-size: 0.28rem;
     color: #333;
 }
 .taps li:last-child{
@@ -47,26 +48,26 @@
 }
 /*----------------------*/
 .topBox{
-    margin-top: 40px;
+    margin-top: 0.8rem;
     background: #fff;
-    padding:16px;
+    padding:0.32rem;
 }
 .topBox{
     background: #fff;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0.8rem;
 }
 .showImg{
-    height: 14px;
-    margin-left: 10px;
+    height: 0.28rem;
+    margin-left: 0.2rem;
 }
 .assets{
-    font-size: 40px;
-    margin-top: 16px;
+    font-size: 0.8rem;
+    margin-top: 0.32rem;
 }
 .buttons{
     position: fixed;
-    bottom:0px;
+    bottom:0rem;
     width: 100%;
 }
 .sellOut{

@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <title>黄金卖出</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="../static/js/flexible.js"></script>
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/buyCurrentGold.css">
+    <style>
+        div{
+            font-size: 0.24rem;
+        }
+        .downBotton{
+            height: 1.04rem;
+            border-radius: 0rem;
+        }
+    </style>
 </head>
 <body>
 <div id="titleBar" flex="dir:left">
@@ -27,10 +39,10 @@
     <p class="canSellNum">可卖出黄金300.0000克</p>
     <div flex="dir:left main:left">
         <input type="number" placeholder="请输入卖出克重" class="numInput">
-        <p class="bigRedText red" style="position: absolute;right: 16px;width: 40px;">全部卖出</p>
+        <p class="bigRedText red" style="position: absolute;right: 0.2rem;width: 0.8rem;">全部卖出</p>
     </div>
-    <p class="canSellNum" style="border:none;border-top: 1px solid #f3f3f3;">手续费: 0.00元
-        <span style="padding-left: 20px">预计卖出金额: </span>
+    <p class="canSellNum" style="border:none;border-top: 0.02rem solid #f3f3f3;">手续费: 0.00元
+        <span style="padding-left: 0.4rem">预计卖出金额: </span>
         <span class="red">0.00元</span>
     </p>
 </div>
@@ -53,14 +65,14 @@
      style="display: none"
 >
     <div class="showChangeBox">
-        <p style="font-size: 16px;font-weight: bold;margin-top: 24px">可接受金价最小提示值</p>
-        <p style="font-size: 14px;margin-top: 10px;">范围越大, 购买成功率越高</p>
+        <p style="font-size: 0.32rem;font-weight: bold;margin-top: 0.48rem">可接受金价最小提示值</p>
+        <p style="font-size: 0.28rem;margin-top: 0.2rem;">范围越大, 购买成功率越高</p>
         <div flex="dir:left main:justify">
             <p class="priceMinus"><img src="../static/img/minus.png" alt=""></p>
             <p class="price">0.5</p>
             <p class="pricePlus"><img src="../static/img/plus.png" alt=""></p>
         </div>
-        <p flex="dir:left main:justify" style="border-top: 1px solid #f3f3f3;">
+        <p flex="dir:left main:justify" style="border-top: 0.01rem solid #f3f3f3;">
             <button id="cancle" style="font-weight: inherit">取消</button>
             <button id="enter">确定</button>
         </p>

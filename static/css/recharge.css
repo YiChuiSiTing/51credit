@@ -1,42 +1,43 @@
 .topBox, .inputNum, .addCard {
-    margin-top: 40px;
+    margin-top: 0.8rem;
     background: #fff;
-    padding: 16px;
-    height: 64px;
+    padding: 0.32rem;
+    height: 1.28rem;
 }
 
 .addCard {
-    height: 48px;
+    height: 0.96rem;
 }
 
 .title {
-    font-size: 16px;
+    font-size: 0.32rem;
     color: #333;
-    margin-bottom: 1px;
-    margin-top: -4px;
+    margin-bottom: 0.02rem;
+    margin-top: -0.08rem;
 }
 
 .inputNum {
-    font-size: 16px;
+    font-size: 0.32rem;
     color: #999999;
     font-family: "Franklin Gothic Medium";
-    line-height: 32px;
-    margin-top: 12px;
+    line-height: 0.64rem;
+    margin-top: 0.24rem;
     position: relative;
 }
 
 .inputNum input {
-    margin-left: 12px;
-    font-size: 16px;
+    margin-left: 0.24rem;
+    font-size: 0.32rem;
     color: #333;
+    font-family: "DIN Alternate";
 }
 .inputNum input:focus{
     color:#999999;
 }
 .keepDown {
     position: absolute;
-    bottom: 16px;
-    padding: 0px 16px;
+    bottom: 0.32rem;
+    padding: 0rem 0.32rem;
     width: 100%;
 }
 
@@ -46,44 +47,44 @@
 
 .verificationCode {
     position: absolute;
-    bottom: 0px;
+    bottom: 0rem;
     width: 100%;
-    /*margin-bottom: 200px;*/
+    /*margin-bottom: 200rem;*/
 }
 .codeTitle{
     background: #fff;
-    height: 48px;
-    line-height: 48px;
-    padding: 0px 16px;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    padding: 0rem 0.32rem;
     color: #333;
-    border-bottom: 1px solid #f3f3f3;
+    border-bottom: 0.01rem solid #f3f3f3;
     
 }
 .close{
-    height: 16px;
-    margin-top: 16px;
+    height: 0.32rem;
+    margin-top: 0.32rem;
 }
 .inputMes{
-    padding:16px;
+    padding:0.32rem;
     background: #fff;
-    font-size: 12px;
+    font-size: 0.24rem;
 }
 .codeInput{
-    height: 48px;
-    line-height: 48px;
-    margin-top: 20px;
-    border-bottom: 1px solid #f3f3f3;
-    margin-bottom: 64px;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    margin-top: 0.4rem;
+    border-bottom: 0.01rem solid #f3f3f3;
+    margin-bottom: 1.28rem;
 }
 .codeInput input{
-    font-size: 16px;
+    font-size: 0.32rem;
 }
 .codeFail{
     position: absolute;
-    bottom:0px;
+    bottom:0rem;
     width: 100%;
-    height: 412px;
-    font-size: 14px;
+    height: 8.24rem;
+    font-size: 0.28rem;
     line-height: 1.5;
     background: #fff;
     display: none;
@@ -92,13 +93,13 @@
 .arrow_box {
     position: relative;
     background: #ff5151;
-    border: 1px solid #ff5151;
+    border: 0.01rem solid #ff5151;
     color: #fff;
-    font-size: 10px;
-    padding: 0px 6px;
-    border-radius: 2px;
-    left:50px;
-    top:-10px;
+    font-size: 0.2rem;
+    padding: 0rem 0.12rem;
+    border-radius: 0.04rem;
+    left:1rem;
+    top:-0.2rem;
     display: none;
 }
 .arrow_box:after, .arrow_box:before {
@@ -116,12 +117,12 @@
 .arrow_box:after {
     border-color: rgba(136, 183, 213, 0);
     /*border-bottom-color: #88b7d5;*/
-    border-width: 10px;
-    margin-left: -30px;
+    border-width: 0.2rem;
+    margin-left: -0.6rem;
 }
 .arrow_box:before {
     border-color: rgba(194, 225, 245, 0);
     border-bottom-color: #ff5151;
-    border-width: 5px;
-    margin-left: -36px;
+    border-width: 0.1rem;
+    margin-left: -0.72rem;
 }

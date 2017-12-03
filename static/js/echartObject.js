@@ -8,13 +8,20 @@ var base = +new Date(2017, 9, 3);
 var oneDay = 24 * 3600 * 1000;
 var dateCurrent = [];
 
-var dataCurrent = [Math.random() * 300];
+var dataCurrent = [];
 var dateHistory = [];
 
 var dataHistory = [];
+<<<<<<< HEAD
 for (var i = 1; i < 70; i++) {
     var now = new Date();
     dateCurrent.push([now.getHours(), now.getMinutes()].join(':'));
+=======
+for (var i = 1; i < 200; i++) {
+    var now = new Date(base += oneDay);
+    // dateCurrent.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
+    dateCurrent.push("00:10")
+>>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
     dataCurrent.push((Math.random()) * 20);
 }
 console.log(dataCurrent)
@@ -31,12 +38,13 @@ for (var i = 1; i < 1000; i++) {
 // console.log(date)
 var optionCurrent = {
     tooltip: {
-        // show:false,
+        show:false,
         trigger: 'axis',
         position: function (pt) {
             return [pt[0], '10%'];
         }
     },
+
     title: {
         left: 'center',
         text: '',
@@ -53,7 +61,21 @@ var optionCurrent = {
     },
     legend:{
         legend:'vertical',
+<<<<<<< HEAD
         itemGap:75
+=======
+        itemGap:75,
+        selectedMode:false,
+        top:0,
+        left:0,
+        selectedMode:false
+    },
+    grid:{
+        // show:true,
+        borderColor:'#ff5151',
+        x:36,
+        x2:6
+>>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
     },
     // xAxis: {
     //     type: 'category',
@@ -63,25 +85,61 @@ var optionCurrent = {
     xAxis: [
         {
             type: 'category',
+            color:'#333',
             axisTick: {
-                alignWithLabel: true
+                alignWithLabel: true,
+                inside:true,
+                lineStyle:{
+                    width:0,
+                    color:'#333'
+                },
+                length:4
+
             },
+            axisLabel:{
+                margin:10,
+                color:'#333',
+                align:'center',
+                color:'#999999',
+                fontSize:'0.20rem',
+                width:10
+            },
+            boundaryGap: ['0%', '20%'],
+            nameGap:100,
             axisLine: {
+                show:false,
                 onZero: false,
                 lineStyle: {
                     color: '#ff5151'
-                }
+                },
+                width:1
             },
+            areaStyle:{
+                lineStyle:{
+                    color:['#ff5151']
+                }
+
+            },
+            splitNumber:10,
+            triggerEvent:false,
             axisPointer: {
+                triggerTooltip:false,
+                show:false,
                 label: {
                     formatter: function (params) {
-                        return '降水量  ' + params.value
+                        return '金价' + params.value
                             + (params.seriesData.length ? '：' + params.seriesData[0].data.toString().substr(0,5) : '');
                     }
                 }
             },
+<<<<<<< HEAD
             data: dateCurrent,
             silent:true
+=======
+
+
+            data: dateCurrent
+>>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
         }
     ],
     yAxis: {
@@ -92,8 +150,25 @@ var optionCurrent = {
                 opacity:0
             }
         },
+<<<<<<< HEAD
         // tickLength:1,
         splitNumber:4
+=======
+        axisLabel:{
+            margin:10,
+            color:'#999999',
+            fontSize:'0.24rem'
+        },
+        axisTick: {
+            alignWithLabel: true,
+            inside:true,
+            lineStyle:{
+                width:0
+            }
+        },
+        triggerEvent:false
+
+>>>>>>> ab9a72a2a62071e9ad91476f282d28188440db63
     },
     dataZoom: [{
         type: 'inside',
@@ -108,10 +183,10 @@ var optionCurrent = {
         handleSize: '80%',
         handleStyle: {
             color: '#fff',
-            shadowBlur: 3,
-            shadowColor: 'rgba(0, 0, 0, 0.6)',
-            shadowOffsetX: 2,
-            shadowOffsetY: 2
+            shadowBlur: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.2)',
+            shadowOffsetX: 0,
+            shadowOffsetY: 0
         }
     }],
     series: [
@@ -121,16 +196,18 @@ var optionCurrent = {
             smooth:true,
             symbol: 'none',
             sampling: 'average',
+            clickable:false,
             itemStyle: {
                 normal: {
-                    color: '#ff5151'
+                    color: '#ff5151',
+                    borderWidth:1
                 }
             },
             areaStyle: {
                 normal: {
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
-                        color: '#ff5151'
+                        color: 'rgba(255, 81, 81,0.25)'
                     }, {
                         offset: 1,
                         color: '#fff'
@@ -138,11 +215,24 @@ var optionCurrent = {
                     }])
                 }
             },
+            lineStyle:{
+                normal:{
+                    width:1
+                }
+
+            },
+            markLine:{
+                silent:true
+            },
+            silent:true,
             data: dataCurrent
             // data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         }
     ],
-
+    geo:{
+        roam:false
+    },
+    calculable:false
 
 };
 
@@ -154,6 +244,7 @@ var optionHistoryOneMonth = {
             return [pt[0], '10%'];
         }
     },
+
     title: {
         left: 'center',
         text: '',
@@ -169,28 +260,100 @@ var optionHistoryOneMonth = {
         // }
     },
     legend:{
-        legend:'vertical'
+        legend:'vertical',
+        itemGap:75,
+        selectedMode:false,
+        top:0,
+        left:0,
+        selectedMode:false
+    },
+    grid:{
+        // show:true,
+        borderColor:'#ff5151',
+        x:36,
+        x2:6
     },
     // xAxis: {
     //     type: 'category',
-    //     name:'近一月成交价',
-    //     nameLocation:'center',
-    //     nameGap:8,
     //     boundaryGap: false,
-    //     data: dateHistory,
-    //
+    //     data: dateCurrent
     // },
+    xAxis: [
+        {
+            type: 'category',
+            color:'#333',
+            axisTick: {
+                alignWithLabel: true,
+                inside:true,
+                lineStyle:{
+                    width:0,
+                    color:'#333'
+                },
+                length:4
 
+            },
+            axisLabel:{
+                margin:10,
+                color:'#333',
+                align:'center',
+                color:'#999999',
+                fontSize:'0.20rem',
+                width:10
+            },
+            boundaryGap: ['0%', '20%'],
+            nameGap:100,
+            axisLine: {
+                show:false,
+                onZero: false,
+                lineStyle: {
+                    color: '#ff5151'
+                },
+                width:1
+            },
+            areaStyle:{
+                lineStyle:{
+                    color:['#ff5151']
+                }
+
+            },
+            splitNumber:10,
+            triggerEvent:false,
+            axisPointer: {
+                triggerTooltip:false,
+                show:false,
+                label: {
+                    formatter: function (params) {
+                        return '降水量  ' + params.value
+                            + (params.seriesData.length ? '：' + params.seriesData[0].data.toString().substr(0,5) : '');
+                    }
+                }
+            },
+
+
+            data: dateCurrent
+        }
+    ],
     yAxis: {
         type: 'value',
-        min:'274.0',
-        max:'276.0',
         boundaryGap: [0, '100%'],
         axisLine:{
             lineStyle:{
                 opacity:0
             }
-        }
+        },
+        axisLabel:{
+            margin:10,
+            color:'#999999',
+            fontSize:'0.24rem'
+        },
+        axisTick: {
+            alignWithLabel: true,
+            inside:true,
+            lineStyle:{
+                width:0
+            }
+        },
+        triggerEvent:false
 
     },
     dataZoom: [{
@@ -206,10 +369,10 @@ var optionHistoryOneMonth = {
         handleSize: '80%',
         handleStyle: {
             color: '#fff',
-            shadowBlur: 3,
-            shadowColor: 'rgba(0, 0, 0, 0.6)',
-            shadowOffsetX: 2,
-            shadowOffsetY: 2
+            shadowBlur: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.2)',
+            shadowOffsetX: 0,
+            shadowOffsetY: 0
         }
     }],
     series: [
@@ -219,14 +382,33 @@ var optionHistoryOneMonth = {
             smooth:true,
             symbol: 'none',
             sampling: 'average',
+            clickable:false,
             itemStyle: {
                 normal: {
-                    color: '#ff5151'
+                    color: '#ff5151',
+                    borderWidth:1
                 }
             },
-            data: dataHistory
+
+            lineStyle:{
+                normal:{
+                    width:1
+                }
+
+            },
+            markLine:{
+                silent:true
+            },
+            silent:true,
+            data: dataCurrent
+            // data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         }
-    ]
+    ],
+    geo:{
+        roam:false
+    },
+    calculable:false
+
 };
 // 使用刚指定的配置项和数据显示图表。
 // myChartCurrent.setOption(option);

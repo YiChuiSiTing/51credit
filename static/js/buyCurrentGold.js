@@ -86,6 +86,7 @@ var buyCurrentGold = {
         }else{
             $(".balanceMes").hide()
         }
+        
     },
     changePrice:function () {
         $(".changePrice").click(function () {
@@ -138,9 +139,9 @@ var buyCurrentGold = {
             var num=0.1;
             var price=Number($(".addPrice").text());
             var saprice=Number($(".price").text())
-            if($(".addPrice").text()<=0.5){
-                $(".addPrice").text(0.5);
-                $('.price').text(0.5)
+            if($(".addPrice").text()<=0){
+                $(".addPrice").text('0.0');
+                $('.price').text('0.0')
             }else{
                 $(".addPrice").text(buyCurrentGold.Subtr(price,num));
                 $('.price').text(buyCurrentGold.Subtr(saprice,num))
