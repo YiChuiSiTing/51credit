@@ -14,6 +14,7 @@ var buyCurrentGold = {
         this.switchGrams();
         this.changePrice();
         this.buy();
+        this.hankPositionErr();
     },
     changeSelected:function () {
         //changeSelected
@@ -50,6 +51,16 @@ var buyCurrentGold = {
                 }
             }
         })
+    },
+    hankPositionErr:function(){
+        $(".numInput").focus(function(){
+            console.log("focus");
+            $(".keepDown").css("position","fixed")
+        });
+        $(".numInput").blur(function(){
+            console.log("blur");
+            $(".keepDown").css("position","absolute")
+        });
     },
     takeGrams:function (val) {
         var rgpPrice = parseFloat($(".rgpPrice").text());
