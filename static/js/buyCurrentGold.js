@@ -54,12 +54,10 @@ var buyCurrentGold = {
     },
     hankPositionErr:function(){
         $(".numInput").focus(function(){
-            console.log("focus");
-            $(".keepDown").css("position","fixed")
+            $(".keepDown").css("position","relative")
         });
         $(".numInput").blur(function(){
-            console.log("blur");
-            $(".keepDown").css("position","absolute")
+            $(".keepDown").css("position","absolute").css("bottom","0px")
         });
     },
     takeGrams:function (val) {
