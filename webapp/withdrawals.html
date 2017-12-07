@@ -96,6 +96,29 @@
             $(".downBotton").attr("disabled", "disabled").css("opacity", '.4');
         }
     })
+        // function hankPositionErr(){
+       $(".inputNum input").focus(function(){
+            $(".keepDown").css("position","relative").css("bottom","-200px")
+        });
+        $(".inputNum input").blur(function(){    
+            $(".keepDown").css("position","absolute").css("bottom","0.32rem")
+        });
+        //  键盘放下时也要监听这个方法   for  andriod
+        //获取当前页面高度
+        var winHeight = $(window).height();   
+        $(window).resize(function(){
+           var thisHeight=$(this).height();
+            if(winHeight - thisHeight >50){ 
+                //窗口发生改变(小),故此时键盘打开
+                //当软键盘打开，在此处操作
+            $(".keepDown").css("position","relative").css("bottom","-200px")
+            }else{
+                //窗口发生改变(小),故此时键盘收起
+                //当软键盘收起，在此处操作
+            $(".keepDown").css("position","absolute").css("bottom","0.32rem")
+            }
+        });
+    // }
     $(".downBotton").click(function () {
         $(".fullScreen").show();
     })

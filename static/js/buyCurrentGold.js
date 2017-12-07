@@ -56,7 +56,7 @@ var buyCurrentGold = {
         $(".numInput").focus(function(){
             $(".keepDown").css("position","relative")
         });
-        $(".numInput").focus(function(){    
+        $(".numInput").blur(function(){    
             $(".keepDown").css("position","absolute").css("bottom","0px")
         });
         //  键盘放下时也要监听这个方法   for  andriod
@@ -64,7 +64,7 @@ var buyCurrentGold = {
         var winHeight = $(window).height();   
         $(window).resize(function(){
            var thisHeight=$(this).height();
-            if(winHeight - thisHeight >50){
+            if(winHeight - thisHeight >50){ 
                 //窗口发生改变(小),故此时键盘打开
                 //当软键盘打开，在此处操作
                 $(".keepDown").css("position","relative")
