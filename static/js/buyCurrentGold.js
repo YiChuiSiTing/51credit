@@ -56,8 +56,23 @@ var buyCurrentGold = {
         $(".numInput").focus(function(){
             $(".keepDown").css("position","relative")
         });
-        $(".numInput").blur(function(){
+        $(".numInput").focus(function(){    
             $(".keepDown").css("position","absolute").css("bottom","0px")
+        });
+        //  键盘放下时也要监听这个方法   for  andriod
+        //获取当前页面高度
+        var winHeight = $(window).height();   
+        $(window).resize(function(){
+           var thisHeight=$(this).height();
+            if(winHeight - thisHeight >50){
+                //窗口发生改变(小),故此时键盘打开
+                //当软键盘打开，在此处操作
+                $(".keepDown").css("position","relative")
+            }else{
+                //窗口发生改变(小),故此时键盘收起
+                //当软键盘收起，在此处操作
+            $(".keepDown").css("position","absolute").css("bottom","0px")
+            }
         });
     },
     takeGrams:function (val) {
